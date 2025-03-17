@@ -1,0 +1,748 @@
+|CI74189RAM
+O3 <= O3.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => CelulaDeMemoria:inst78.RnotW
+RnotW => CelulaDeMemoria:inst.RnotW
+RnotW => CelulaDeMemoria:inst22.RnotW
+RnotW => CelulaDeMemoria:inst26.RnotW
+RnotW => CelulaDeMemoria:inst30.RnotW
+RnotW => CelulaDeMemoria:inst34.RnotW
+RnotW => CelulaDeMemoria:inst38.RnotW
+RnotW => CelulaDeMemoria:inst42.RnotW
+RnotW => CelulaDeMemoria:inst46.RnotW
+RnotW => CelulaDeMemoria:inst50.RnotW
+RnotW => CelulaDeMemoria:inst54.RnotW
+RnotW => CelulaDeMemoria:inst58.RnotW
+RnotW => CelulaDeMemoria:inst62.RnotW
+RnotW => CelulaDeMemoria:inst66.RnotW
+RnotW => CelulaDeMemoria:inst70.RnotW
+RnotW => CelulaDeMemoria:inst74.RnotW
+RnotW => CelulaDeMemoria:inst79.RnotW
+RnotW => CelulaDeMemoria:inst19.RnotW
+RnotW => CelulaDeMemoria:inst23.RnotW
+RnotW => CelulaDeMemoria:inst27.RnotW
+RnotW => CelulaDeMemoria:inst31.RnotW
+RnotW => CelulaDeMemoria:inst35.RnotW
+RnotW => CelulaDeMemoria:inst39.RnotW
+RnotW => CelulaDeMemoria:inst43.RnotW
+RnotW => CelulaDeMemoria:inst47.RnotW
+RnotW => CelulaDeMemoria:inst51.RnotW
+RnotW => CelulaDeMemoria:inst55.RnotW
+RnotW => CelulaDeMemoria:inst59.RnotW
+RnotW => CelulaDeMemoria:inst63.RnotW
+RnotW => CelulaDeMemoria:inst67.RnotW
+RnotW => CelulaDeMemoria:inst71.RnotW
+RnotW => CelulaDeMemoria:inst75.RnotW
+RnotW => CelulaDeMemoria:inst80.RnotW
+RnotW => CelulaDeMemoria:inst20.RnotW
+RnotW => CelulaDeMemoria:inst24.RnotW
+RnotW => CelulaDeMemoria:inst28.RnotW
+RnotW => CelulaDeMemoria:inst32.RnotW
+RnotW => CelulaDeMemoria:inst36.RnotW
+RnotW => CelulaDeMemoria:inst40.RnotW
+RnotW => CelulaDeMemoria:inst44.RnotW
+RnotW => CelulaDeMemoria:inst48.RnotW
+RnotW => CelulaDeMemoria:inst52.RnotW
+RnotW => CelulaDeMemoria:inst56.RnotW
+RnotW => CelulaDeMemoria:inst60.RnotW
+RnotW => CelulaDeMemoria:inst64.RnotW
+RnotW => CelulaDeMemoria:inst68.RnotW
+RnotW => CelulaDeMemoria:inst72.RnotW
+RnotW => CelulaDeMemoria:inst76.RnotW
+RnotW => CelulaDeMemoria:inst81.RnotW
+RnotW => CelulaDeMemoria:inst21.RnotW
+RnotW => CelulaDeMemoria:inst25.RnotW
+RnotW => CelulaDeMemoria:inst29.RnotW
+RnotW => CelulaDeMemoria:inst33.RnotW
+RnotW => CelulaDeMemoria:inst37.RnotW
+RnotW => CelulaDeMemoria:inst41.RnotW
+RnotW => CelulaDeMemoria:inst45.RnotW
+RnotW => CelulaDeMemoria:inst49.RnotW
+RnotW => CelulaDeMemoria:inst53.RnotW
+RnotW => CelulaDeMemoria:inst57.RnotW
+RnotW => CelulaDeMemoria:inst61.RnotW
+RnotW => CelulaDeMemoria:inst65.RnotW
+RnotW => CelulaDeMemoria:inst69.RnotW
+RnotW => CelulaDeMemoria:inst73.RnotW
+RnotW => CelulaDeMemoria:inst77.RnotW
+A0 => inst17.IN0
+A0 => inst86.IN0
+A0 => inst3.IN0
+A0 => inst5.IN0
+A0 => inst7.IN0
+A0 => inst9.IN0
+A0 => inst11.IN0
+A0 => inst13.IN0
+A0 => inst15.IN0
+A1 => inst17.IN1
+A1 => inst85.IN0
+A1 => inst6.IN1
+A1 => inst5.IN1
+A1 => inst10.IN1
+A1 => inst9.IN1
+A1 => inst14.IN1
+A1 => inst13.IN1
+A1 => inst18.IN1
+A2 => inst17.IN2
+A2 => inst84.IN0
+A2 => inst8.IN2
+A2 => inst7.IN2
+A2 => inst10.IN2
+A2 => inst9.IN2
+A2 => inst16.IN2
+A2 => inst15.IN2
+A2 => inst18.IN2
+A3 => inst17.IN3
+A3 => inst83.IN0
+A3 => inst12.IN3
+A3 => inst11.IN3
+A3 => inst14.IN3
+A3 => inst13.IN3
+A3 => inst16.IN3
+A3 => inst15.IN3
+A3 => inst18.IN3
+CS => inst102.IN0
+D3 => CelulaDeMemoria:inst78.D
+D3 => CelulaDeMemoria:inst.D
+D3 => CelulaDeMemoria:inst22.D
+D3 => CelulaDeMemoria:inst26.D
+D3 => CelulaDeMemoria:inst30.D
+D3 => CelulaDeMemoria:inst34.D
+D3 => CelulaDeMemoria:inst38.D
+D3 => CelulaDeMemoria:inst42.D
+D3 => CelulaDeMemoria:inst46.D
+D3 => CelulaDeMemoria:inst50.D
+D3 => CelulaDeMemoria:inst54.D
+D3 => CelulaDeMemoria:inst58.D
+D3 => CelulaDeMemoria:inst62.D
+D3 => CelulaDeMemoria:inst66.D
+D3 => CelulaDeMemoria:inst70.D
+D3 => CelulaDeMemoria:inst74.D
+O2 <= O2.DB_MAX_OUTPUT_PORT_TYPE
+D2 => CelulaDeMemoria:inst79.D
+D2 => CelulaDeMemoria:inst19.D
+D2 => CelulaDeMemoria:inst23.D
+D2 => CelulaDeMemoria:inst27.D
+D2 => CelulaDeMemoria:inst31.D
+D2 => CelulaDeMemoria:inst35.D
+D2 => CelulaDeMemoria:inst39.D
+D2 => CelulaDeMemoria:inst43.D
+D2 => CelulaDeMemoria:inst47.D
+D2 => CelulaDeMemoria:inst51.D
+D2 => CelulaDeMemoria:inst55.D
+D2 => CelulaDeMemoria:inst59.D
+D2 => CelulaDeMemoria:inst63.D
+D2 => CelulaDeMemoria:inst67.D
+D2 => CelulaDeMemoria:inst71.D
+D2 => CelulaDeMemoria:inst75.D
+O1 <= O1.DB_MAX_OUTPUT_PORT_TYPE
+D1 => CelulaDeMemoria:inst80.D
+D1 => CelulaDeMemoria:inst20.D
+D1 => CelulaDeMemoria:inst24.D
+D1 => CelulaDeMemoria:inst28.D
+D1 => CelulaDeMemoria:inst32.D
+D1 => CelulaDeMemoria:inst36.D
+D1 => CelulaDeMemoria:inst40.D
+D1 => CelulaDeMemoria:inst44.D
+D1 => CelulaDeMemoria:inst48.D
+D1 => CelulaDeMemoria:inst52.D
+D1 => CelulaDeMemoria:inst56.D
+D1 => CelulaDeMemoria:inst60.D
+D1 => CelulaDeMemoria:inst64.D
+D1 => CelulaDeMemoria:inst68.D
+D1 => CelulaDeMemoria:inst72.D
+D1 => CelulaDeMemoria:inst76.D
+O0 <= O0.DB_MAX_OUTPUT_PORT_TYPE
+D0 => CelulaDeMemoria:inst81.D
+D0 => CelulaDeMemoria:inst21.D
+D0 => CelulaDeMemoria:inst25.D
+D0 => CelulaDeMemoria:inst29.D
+D0 => CelulaDeMemoria:inst33.D
+D0 => CelulaDeMemoria:inst37.D
+D0 => CelulaDeMemoria:inst41.D
+D0 => CelulaDeMemoria:inst45.D
+D0 => CelulaDeMemoria:inst49.D
+D0 => CelulaDeMemoria:inst53.D
+D0 => CelulaDeMemoria:inst57.D
+D0 => CelulaDeMemoria:inst61.D
+D0 => CelulaDeMemoria:inst65.D
+D0 => CelulaDeMemoria:inst69.D
+D0 => CelulaDeMemoria:inst73.D
+D0 => CelulaDeMemoria:inst77.D
+
+
+|CI74189RAM|CelulaDeMemoria:inst78
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst22
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst26
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst30
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst34
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst38
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst42
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst46
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst50
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst54
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst58
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst62
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst66
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst70
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst74
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst79
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst19
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst23
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst27
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst31
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst35
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst39
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst43
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst47
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst51
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst55
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst59
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst63
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst67
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst71
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst75
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst80
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst20
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst24
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst28
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst32
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst36
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst40
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst44
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst48
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst52
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst56
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst60
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst64
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst68
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst72
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst76
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst81
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst21
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst25
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst29
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst33
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst37
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst41
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst45
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst49
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst53
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst57
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst61
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst65
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst69
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst73
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+
+|CI74189RAM|CelulaDeMemoria:inst77
+O <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RnotW => inst1.IN0
+RnotW => inst2.IN0
+SEL => inst1.IN1
+SEL => inst.IN0
+D => inst3.DATAIN
+
+

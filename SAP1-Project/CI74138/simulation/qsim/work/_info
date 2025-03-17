@@ -1,0 +1,106 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/aluno/Documents/Fred-Embarcados/CIs/CI DM74LS138/simulation/qsim
+v\74LS138 
+!s110 1738926717
+!i10b 1
+!s100 `nN>_=BU5Pk;G<VIGe^7J2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IheO=VgH3Mj[jnPG1M4D2E3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1738926716
+Z3 874LS138.vo
+Z4 F74LS138.vo
+!i122 6
+L0 32 538
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1738926717.000000
+Z6 !s107 74LS138.vo|
+Z7 !s90 -work|work|74LS138.vo|
+!i113 1
+Z8 o-work work
+Z9 tCvgOpt 0
+n@13474@l@s138@040
+vCI74LS138
+Z10 !s110 1738931030
+!i10b 1
+!s100 @J:E;zb4N9l7=3gV:K6d31
+R1
+IXTU0GS6Ed9X2coX7mQOk83
+R2
+Z11 dC:/Users/aluno/Documents/Fred-Embarcados/CIs/CI74LS138/simulation/qsim
+Z12 w1738931030
+R3
+R4
+!i122 17
+L0 32 556
+R5
+r1
+!s85 0
+31
+Z13 !s108 1738931030.000000
+R6
+R7
+!i113 1
+R8
+R9
+n@c@i74@l@s138
+vCI74LS138_vlg_vec_tst
+R10
+!i10b 1
+!s100 dkHk8zA]UI3><P2b>D>:F3
+R1
+I<LJCMW]:nB=VGh1743P8d3
+R2
+R11
+w1738931029
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 18
+L0 30 96
+R5
+r1
+!s85 0
+31
+R13
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R8
+R9
+n@c@i74@l@s138_vlg_vec_tst
+vhard_block
+R10
+!i10b 1
+!s100 >lQYARXFP;hOz3lHRM20W3
+R1
+I:MUl2L:82IIdg>EG<2GnU3
+R2
+R11
+R12
+R3
+R4
+!i122 17
+L0 589 45
+R5
+r1
+!s85 0
+31
+R13
+R6
+R7
+!i113 1
+R8
+R9

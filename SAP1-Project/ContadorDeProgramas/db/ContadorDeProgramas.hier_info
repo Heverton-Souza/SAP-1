@@ -1,0 +1,24 @@
+|ContadorDeProgramas
+Out0 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst3.ACLR
+CLR => inst2.ACLR
+CLR => inst1.ACLR
+CLR => inst.ACLR
+Cp => inst3.IN0
+Cp => inst3.IN1
+Cp => inst2.IN0
+Cp => inst2.IN1
+Cp => inst1.IN0
+Cp => inst1.IN1
+Cp => inst.IN0
+Cp => inst.IN1
+CLK => inst3.CLK
+Ep => inst10.OE
+Ep => inst9.OE
+Ep => inst8.OE
+Ep => inst7.OE
+Out1 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Out2 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Out3 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+

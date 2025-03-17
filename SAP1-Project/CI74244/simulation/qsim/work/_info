@@ -1,0 +1,58 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Sistemas embarcados/CIs/CI74244/simulation/qsim
+vCI74244
+Z1 !s110 1742153167
+!i10b 1
+!s100 eAaek:65@b?PV;8jhecW60
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I_LGO2YaYWC5OOUmT:MXS40
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1742153164
+Z5 8CI74244.vo
+Z6 FCI74244.vo
+!i122 0
+L0 32 440
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1742153166.000000
+!s107 CI74244.vo|
+Z9 !s90 -work|work|CI74244.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@c@i74244
+vhard_block
+R1
+!i10b 1
+!s100 h_W0cQQ2S0Q]W@UDNAY]D3
+R2
+IYnf<L]oIF<G8jhmdk]R9W2
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 473 45
+R7
+r1
+!s85 0
+31
+R8
+Z12 !s107 CI74244.vo|
+R9
+!i113 1
+R10
+R11

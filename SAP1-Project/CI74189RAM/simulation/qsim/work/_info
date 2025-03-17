@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Sistemas embarcados/CIs/CI74189RAM/simulation/qsim
+vCI74189RAM
+!s110 1742148600
+!i10b 1
+!s100 cob`:K>iE=iGHTn@nAnlY2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I?E3i@z:gM_>^c>Vf?Al8S1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1742148598
+8CI74189RAM.vo
+FCI74189RAM.vo
+!i122 8
+L0 32 4789
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1742148600.000000
+!s107 CI74189RAM.vo|
+!s90 -work|work|CI74189RAM.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@c@i74189@r@a@m
+vCI74189RAM_vlg_vec_tst
+!s110 1742148601
+!i10b 1
+!s100 TI[A`LlWOYk=f6c36cgRT3
+R1
+IP`g?S6W>C?KTEa>?4ZBE@0
+R2
+R0
+w1742148596
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 9
+L0 30 178
+R3
+r1
+!s85 0
+31
+!s108 1742148601.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5
+n@c@i74189@r@a@m_vlg_vec_tst

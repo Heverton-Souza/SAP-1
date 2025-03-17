@@ -1,0 +1,85 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Cp",
+					"strict" : false
+				},
+				{
+					"name" : "Ep",
+					"strict" : false
+				},
+				{
+					"name" : "L1",
+					"strict" : false
+				},
+				{
+					"name" : "HLT",
+					"strict" : false
+				},
+				{
+					"name" : "Lm",
+					"strict" : false
+				},
+				{
+					"name" : "CE",
+					"strict" : false
+				},
+				{
+					"name" : "Ei",
+					"strict" : false
+				},
+				{
+					"name" : "La",
+					"strict" : false
+				},
+				{
+					"name" : "Ea",
+					"strict" : false
+				},
+				{
+					"name" : "Su",
+					"strict" : false
+				},
+				{
+					"name" : "Eu",
+					"strict" : false
+				},
+				{
+					"name" : "Lb",
+					"strict" : false
+				},
+				{
+					"name" : "L0",
+					"strict" : false
+				},
+				{
+					"name" : "opc3",
+					"strict" : false
+				},
+				{
+					"name" : "opc0",
+					"strict" : false
+				},
+				{
+					"name" : "opc1",
+					"strict" : false
+				},
+				{
+					"name" : "opc2",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "CLR",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
