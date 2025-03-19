@@ -1,5 +1,5 @@
 Analysis & Synthesis report for control
-Sun Mar 16 18:35:38 2025
+Tue Mar 18 19:26:42 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Mar 16 18:35:38 2025       ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 18 19:26:42 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; control                                     ;
 ; Top-level Entity Name              ; control                                     ;
@@ -52,7 +52,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Total combinational functions  ; 14                                          ;
 ;     Dedicated logic registers      ; 6                                           ;
 ; Total registers                    ; 6                                           ;
-; Total pins                         ; 19                                          ;
+; Total pins                         ; 20                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -161,18 +161,17 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                               ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+---------+
-; control.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/Sistemas embarcados/CIs/Unidade de Controle/control.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                    ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+---------+
+; control.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/SAP-1/SAP1-Project/Unidade de Controle/control.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -196,14 +195,14 @@ https://fpgasoftware.intel.com/eula.
 ;     -- Dedicated logic registers            ; 6          ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 19         ;
+; I/O pins                                    ; 20         ;
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
-; Maximum fan-out node                        ; opc3~input ;
+; Maximum fan-out node                        ; opc2~input ;
 ; Maximum fan-out                             ; 6          ;
-; Total fan-out                               ; 90         ;
-; Average fan-out                             ; 1.55       ;
+; Total fan-out                               ; 92         ;
+; Average fan-out                             ; 1.53       ;
 +---------------------------------------------+------------+
 
 
@@ -212,7 +211,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |control                   ; 14 (14)             ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 19   ; 0            ; 0          ; |control            ; control     ; work         ;
+; |control                   ; 14 (14)             ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 20   ; 0            ; 0          ; |control            ; control     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -237,7 +236,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 19                          ;
+; boundary_port         ; 20                          ;
 ; cycloneiii_ff         ; 6                           ;
 ;     CLR               ; 6                           ;
 ; cycloneiii_lcell_comb ; 23                          ;
@@ -267,7 +266,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Mar 16 18:35:16 2025
+    Info: Processing started: Tue Mar 18 19:26:22 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off control -c control
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -277,14 +276,14 @@ Info (12127): Elaborating entity "control" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 37 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 13 output pins
+    Info (21059): Implemented 14 output pins
     Info (21061): Implemented 18 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4759 megabytes
-    Info: Processing ended: Sun Mar 16 18:35:38 2025
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:41
+    Info: Processing ended: Tue Mar 18 19:26:42 2025
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:36
 
 

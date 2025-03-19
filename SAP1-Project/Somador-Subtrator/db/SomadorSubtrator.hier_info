@@ -1,0 +1,93 @@
+|SomadorSubtrator
+O0 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+A0 => CI7483:inst2.A0
+Su => inst5.IN0
+Su => inst6.IN0
+Su => inst7.IN0
+Su => inst8.IN0
+Su => inst9.IN0
+Su => inst10.IN0
+Su => inst11.IN0
+Su => inst12.IN0
+B0 => inst5.IN1
+A1 => CI7483:inst2.A1
+B1 => inst6.IN1
+A2 => CI7483:inst2.A2
+B2 => inst7.IN1
+A3 => CI7483:inst2.A3
+B3 => inst8.IN1
+Eu => inst13.OE
+Eu => inst14.OE
+Eu => inst15.OE
+Eu => inst16.OE
+Eu => inst17.OE
+Eu => inst18.OE
+Eu => inst19.OE
+Eu => inst20.OE
+O1 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+O2 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+O3 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+O4 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+A4 => CI7483:inst1.A0
+B4 => inst9.IN1
+A5 => CI7483:inst1.A1
+B5 => inst10.IN1
+A6 => CI7483:inst1.A2
+B6 => inst11.IN1
+A7 => CI7483:inst1.A3
+B7 => inst12.IN1
+O5 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+O6 <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+O7 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SomadorSubtrator|CI7483:inst2
+S0 <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst3.IN0
+A0 => inst2.IN0
+B0 => inst3.IN1
+B0 => inst2.IN1
+C0 => inst.IN0
+S1 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst5.IN0
+A1 => inst4.IN0
+B1 => inst5.IN1
+B1 => inst4.IN1
+S2 <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst18.IN0
+A2 => inst17.IN0
+B2 => inst18.IN1
+B2 => inst17.IN1
+S3 <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst26.IN0
+A3 => inst25.IN0
+B3 => inst26.IN1
+B3 => inst25.IN1
+C4 <= inst66.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SomadorSubtrator|CI7483:inst1
+S0 <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst3.IN0
+A0 => inst2.IN0
+B0 => inst3.IN1
+B0 => inst2.IN1
+C0 => inst.IN0
+S1 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst5.IN0
+A1 => inst4.IN0
+B1 => inst5.IN1
+B1 => inst4.IN1
+S2 <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst18.IN0
+A2 => inst17.IN0
+B2 => inst18.IN1
+B2 => inst17.IN1
+S3 <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst26.IN0
+A3 => inst25.IN0
+B3 => inst26.IN1
+B3 => inst25.IN1
+C4 <= inst66.DB_MAX_OUTPUT_PORT_TYPE
+
+

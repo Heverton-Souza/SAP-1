@@ -109,18 +109,18 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 128 40)(pt 112 40))
 	)
 	(port
-		(pt 128 64)
-		(output)
-		(text "COut" (rect 0 0 29 19)(font "Intel Clear" (font_size 8)))
-		(text "COut" (rect 78 59 107 78)(font "Intel Clear" (font_size 8)))
-		(line (pt 128 64)(pt 112 64))
-	)
-	(port
 		(pt 128 88)
 		(output)
-		(text "BOut" (rect 0 0 29 19)(font "Intel Clear" (font_size 8)))
-		(text "BOut" (rect 78 83 107 102)(font "Intel Clear" (font_size 8)))
+		(text "COut" (rect 0 0 29 19)(font "Intel Clear" (font_size 8)))
+		(text "COut" (rect 78 83 107 102)(font "Intel Clear" (font_size 8)))
 		(line (pt 128 88)(pt 112 88))
+	)
+	(port
+		(pt 128 64)
+		(output)
+		(text "BOut" (rect 0 0 29 19)(font "Intel Clear" (font_size 8)))
+		(text "BOut" (rect 78 59 107 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 128 64)(pt 112 64))
 	)
 	(port
 		(pt 128 112)

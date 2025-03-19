@@ -16,10 +16,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "HLT",
-					"strict" : false
-				},
-				{
 					"name" : "Lm",
 					"strict" : false
 				},
@@ -56,6 +52,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "NHLT",
+					"strict" : false
+				},
+				{
+					"name" : "HLT",
+					"strict" : false
+				},
+				{
+					"name" : "opc2",
+					"strict" : false
+				},
+				{
 					"name" : "opc3",
 					"strict" : false
 				},
@@ -65,10 +73,6 @@
 				},
 				{
 					"name" : "opc1",
-					"strict" : false
-				},
-				{
-					"name" : "opc2",
 					"strict" : false
 				},
 				{
