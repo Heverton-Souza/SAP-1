@@ -3597,3 +3597,7 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt 1712 632))
 (junction (pt 1168 448))
 (junction (pt 560 1144))
+(text "LDA" (rect 544 776 568 795)(font "Intel Clear" (font_size 8)))
+(text "ADD" (rect 560 800 587 819)(font "Intel Clear" (font_size 8)))
+(text "SUB" (rect 584 824 609 843)(font "Intel Clear" (font_size 8)))
+(text "OUT" (rect 608 848 635 867)(font "Intel Clear" (font_size 8)))

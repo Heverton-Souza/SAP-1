@@ -8,6 +8,58 @@
 					"strict" : false
 				},
 				{
+					"name" : "Cp",
+					"strict" : false
+				},
+				{
+					"name" : "NHLT",
+					"strict" : false
+				},
+				{
+					"name" : "Ep",
+					"strict" : false
+				},
+				{
+					"name" : "NLb",
+					"strict" : false
+				},
+				{
+					"name" : "Su",
+					"strict" : false
+				},
+				{
+					"name" : "Eu",
+					"strict" : false
+				},
+				{
+					"name" : "NLa",
+					"strict" : false
+				},
+				{
+					"name" : "Ea",
+					"strict" : false
+				},
+				{
+					"name" : "NLm",
+					"strict" : false
+				},
+				{
+					"name" : "NCE",
+					"strict" : false
+				},
+				{
+					"name" : "NL1",
+					"strict" : false
+				},
+				{
+					"name" : "NEi",
+					"strict" : false
+				},
+				{
+					"name" : "NL0",
+					"strict" : false
+				},
+				{
 					"name" : "LED6",
 					"strict" : false
 				},
@@ -33,6 +85,74 @@
 				},
 				{
 					"name" : "LED0",
+					"strict" : false
+				},
+				{
+					"name" : "HLT",
+					"strict" : false
+				},
+				{
+					"name" : "opcode0",
+					"strict" : false
+				},
+				{
+					"name" : "opcode1",
+					"strict" : false
+				},
+				{
+					"name" : "opcode2",
+					"strict" : false
+				},
+				{
+					"name" : "opcode3",
+					"strict" : false
+				},
+				{
+					"name" : "w0",
+					"strict" : false
+				},
+				{
+					"name" : "w1",
+					"strict" : false
+				},
+				{
+					"name" : "w2",
+					"strict" : false
+				},
+				{
+					"name" : "w3",
+					"strict" : false
+				},
+				{
+					"name" : "w4",
+					"strict" : false
+				},
+				{
+					"name" : "w5",
+					"strict" : false
+				},
+				{
+					"name" : "w6",
+					"strict" : false
+				},
+				{
+					"name" : "w7",
+					"strict" : false
+				},
+				{
+					"name" : "MEM7",
+					"strict" : false
+				},
+				{
+					"name" : "MEM6",
+					"strict" : false
+				},
+				{
+					"name" : "MEM5",
+					"strict" : false
+				},
+				{
+					"name" : "MEM4",
 					"strict" : false
 				},
 				{
@@ -76,7 +196,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "D3",
+					"name" : "D4",
 					"strict" : false
 				},
 				{
@@ -84,19 +204,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "D2",
-					"strict" : false
-				},
-				{
 					"name" : "D5",
 					"strict" : false
 				},
 				{
-					"name" : "D1",
+					"name" : "D3",
 					"strict" : false
 				},
 				{
-					"name" : "D4",
+					"name" : "D2",
+					"strict" : false
+				},
+				{
+					"name" : "D1",
 					"strict" : false
 				},
 				{
