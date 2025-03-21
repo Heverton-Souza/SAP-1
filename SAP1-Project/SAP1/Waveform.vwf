@@ -21,6 +21,9 @@ after 2500 simTimestamp
 run -all
 quit -f
 
+
+
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -39,6 +42,9 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
+
+
 
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
@@ -338,21 +344,6 @@ SIGNAL("Sinal_clock")
 	PARENT = "";
 }
 
-GROUP("Data")
-{
-	MEMBERS = "D0", "D1", "D2", "D3", "D4", "D5", "D6", "D7";
-}
-
-GROUP("Output")
-{
-	MEMBERS = "LED0", "LED1", "LED2", "LED3", "LED4", "LED5", "LED6", "LED7";
-}
-
-GROUP("Addres")
-{
-	MEMBERS = "A3", "A2", "A1", "A0";
-}
-
 SIGNAL("Cp")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -493,11 +484,6 @@ SIGNAL("Su")
 	PARENT = "";
 }
 
-GROUP("Unidade_de_Controle")
-{
-	MEMBERS = "Cp", "Ea", "Ep", "Eu", "HLT", "NCE", "NEi", "NHLT", "NL0", "NL1", "NLa", "NLb", "NLm", "Su";
-}
-
 SIGNAL("opcode0")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -618,6 +604,66 @@ SIGNAL("w7")
 	PARENT = "";
 }
 
+SIGNAL("ARAM")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("BRAM")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("CRAM")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("DRAM")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+GROUP("Data")
+{
+	MEMBERS = "D0", "D1", "D2", "D3", "D4", "D5", "D6", "D7";
+}
+
+GROUP("Output")
+{
+	MEMBERS = "LED0", "LED1", "LED2", "LED3", "LED4", "LED5", "LED6", "LED7";
+}
+
+GROUP("Addres")
+{
+	MEMBERS = "A3", "A2", "A1", "A0";
+}
+
+GROUP("Unidade_de_Controle")
+{
+	MEMBERS = "Cp", "Ea", "Ep", "Eu", "HLT", "NCE", "NEi", "NHLT", "NL0", "NL1", "NLa", "NLb", "NLm", "Su";
+}
+
 GROUP("opcode")
 {
 	MEMBERS = "opcode0", "opcode1", "opcode2", "opcode3";
@@ -626,6 +672,51 @@ GROUP("opcode")
 GROUP("barramento_central")
 {
 	MEMBERS = "w0", "w1", "w2", "w3", "w4", "w5", "w6", "w7";
+}
+
+GROUP("RAM_INPUT")
+{
+	MEMBERS = "ARAM", "BRAM", "CRAM", "DRAM";
+}
+
+SIGNAL("MEM0")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("MEM1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("MEM2")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("MEM3")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
 }
 
 SIGNAL("MEM4")
@@ -670,7 +761,7 @@ SIGNAL("MEM7")
 
 GROUP("MEM")
 {
-	MEMBERS = "MEM4", "MEM5", "MEM6", "MEM7";
+	MEMBERS = "MEM0", "MEM1", "MEM2", "MEM3", "MEM4", "MEM5", "MEM6", "MEM7";
 }
 
 TRANSITION_LIST("A0")
@@ -691,17 +782,9 @@ TRANSITION_LIST("A0")
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 10.0;
 		NODE
 		{
-			REPEAT = 4;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
-		}
-		LEVEL 0 FOR 10.0;
-		NODE
-		{
-			REPEAT = 2;
+			REPEAT = 7;
 			LEVEL 1 FOR 10.0;
 			LEVEL 0 FOR 10.0;
 		}
@@ -729,15 +812,13 @@ TRANSITION_LIST("A1")
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
 		NODE
 		{
-			REPEAT = 1;
-			LEVEL 0 FOR 20.0;
+			REPEAT = 2;
 			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 20.0;
 		}
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 650.0;
 	}
@@ -951,8 +1032,8 @@ TRANSITION_LIST("LeituraEscrita")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 170.0;
-		LEVEL 1 FOR 830.0;
+		LEVEL 1 FOR 170.0;
+		LEVEL 0 FOR 830.0;
 	}
 }
 
@@ -961,7 +1042,8 @@ TRANSITION_LIST("Limpar_Iniciar")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 170.0;
+		LEVEL 1 FOR 830.0;
 	}
 }
 
@@ -979,8 +1061,16 @@ TRANSITION_LIST("RUN_PROG")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 170.0;
-		LEVEL 1 FOR 830.0;
+		LEVEL 1 FOR 2.7;
+		NODE
+		{
+			REPEAT = 16;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
+		}
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 2.3;
+		LEVEL 0 FOR 830.0;
 	}
 }
 
@@ -989,20 +1079,15 @@ TRANSITION_LIST("Sinal_clock")
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 1 FOR 2.5;
 		NODE
 		{
-			REPEAT = 17;
+			REPEAT = 99;
 			LEVEL 0 FOR 5.0;
 			LEVEL 1 FOR 5.0;
 		}
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 5.0;
-		NODE
-		{
-			REPEAT = 80;
-			LEVEL 0 FOR 5.0;
-			LEVEL 1 FOR 5.0;
-		}
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 2.5;
 	}
 }
 
@@ -1240,6 +1325,78 @@ TRANSITION_LIST("w7")
 	}
 }
 
+TRANSITION_LIST("ARAM")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("BRAM")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("CRAM")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("DRAM")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("MEM0")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("MEM1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("MEM2")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("MEM3")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
 TRANSITION_LIST("MEM4")
 {
 	NODE
@@ -1419,7 +1576,7 @@ DISPLAY_LINE
 DISPLAY_LINE
 {
 	CHANNEL = "Output";
-	EXPAND_STATUS = EXPANDED;
+	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
 	TREE_LEVEL = 0;
@@ -1852,7 +2009,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "MEM";
+	CHANNEL = "RAM_INPUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 58;
@@ -1862,7 +2019,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "MEM4";
+	CHANNEL = "DRAM";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 59;
@@ -1872,7 +2029,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "MEM5";
+	CHANNEL = "CRAM";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 60;
@@ -1882,7 +2039,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "MEM6";
+	CHANNEL = "BRAM";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 61;
@@ -1892,12 +2049,102 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "MEM7";
+	CHANNEL = "ARAM";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 62;
 	TREE_LEVEL = 1;
 	PARENT = 58;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "MEM";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 63;
+	TREE_LEVEL = 0;
+	CHILDREN = 64, 65, 66, 67, 68, 69, 70, 71;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "MEM7";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 64;
+	TREE_LEVEL = 1;
+	PARENT = 63;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "MEM6";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 65;
+	TREE_LEVEL = 1;
+	PARENT = 63;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "MEM5";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 66;
+	TREE_LEVEL = 1;
+	PARENT = 63;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "MEM4";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 67;
+	TREE_LEVEL = 1;
+	PARENT = 63;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "MEM3";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 68;
+	TREE_LEVEL = 1;
+	PARENT = 63;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "MEM2";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 69;
+	TREE_LEVEL = 1;
+	PARENT = 63;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "MEM1";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 70;
+	TREE_LEVEL = 1;
+	PARENT = 63;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "MEM0";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 71;
+	TREE_LEVEL = 1;
+	PARENT = 63;
 }
 
 TIME_BAR

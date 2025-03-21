@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RAM
-Sun Mar 16 20:10:46 2025
+Thu Mar 20 21:52:10 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Mar 16 20:10:46 2025       ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar 20 21:52:09 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; RAM                                         ;
 ; Top-level Entity Name              ; RAM                                         ;
@@ -164,15 +164,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                        ; Library ;
-+----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------+---------+
-; RAM.bdf                          ; yes             ; User Block Diagram/Schematic File        ; D:/Sistemas embarcados/SAP1/RAM/RAM.bdf             ;         ;
-; ci74189ram.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Sistemas embarcados/SAP1/RAM/ci74189ram.bdf      ;         ;
-; celuladememoria.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Sistemas embarcados/SAP1/RAM/celuladememoria.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                  ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                  ; Library ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------+---------+
+; RAM.bdf                          ; yes             ; User Block Diagram/Schematic File        ; D:/SAP-1/SAP1-Project/RAM/RAM.bdf             ;         ;
+; ci74189ram.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/SAP-1/SAP1-Project/RAM/ci74189ram.bdf      ;         ;
+; celuladememoria.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/SAP-1/SAP1-Project/RAM/celuladememoria.bdf ;         ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------+---------+
 
 
 +--------------------------------------------------------------------+
@@ -397,7 +397,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Mar 16 20:10:02 2025
+    Info: Processing started: Thu Mar 20 21:51:17 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RAM -c RAM
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -419,8 +419,8 @@ Info (21057): Implemented 392 device resources after synthesis - the final resou
     Info (21061): Implemented 369 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4764 megabytes
-    Info: Processing ended: Sun Mar 16 20:10:46 2025
-    Info: Elapsed time: 00:00:44
+    Info: Processing ended: Thu Mar 20 21:52:10 2025
+    Info: Elapsed time: 00:00:53
     Info: Total CPU time (on all processors): 00:00:51
 
 

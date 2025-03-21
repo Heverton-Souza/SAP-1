@@ -1,0 +1,268 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "03/20/2025 22:08:32"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          RAM
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module RAM_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg AOut;
+reg BOut;
+reg CE;
+reg COut;
+reg D0;
+reg D1;
+reg D2;
+reg D3;
+reg D4;
+reg D5;
+reg D6;
+reg D7;
+reg DOut;
+reg LeituraEscrita;
+reg RunProg;
+// wires                                               
+wire MEM0;
+wire MEM1;
+wire MEM2;
+wire MEM3;
+wire MEM4;
+wire MEM5;
+wire MEM6;
+wire MEM7;
+
+// assign statements (if any)                          
+RAM i1 (
+// port map - connection between master ports and signals/registers   
+	.AOut(AOut),
+	.BOut(BOut),
+	.CE(CE),
+	.COut(COut),
+	.D0(D0),
+	.D1(D1),
+	.D2(D2),
+	.D3(D3),
+	.D4(D4),
+	.D5(D5),
+	.D6(D6),
+	.D7(D7),
+	.DOut(DOut),
+	.LeituraEscrita(LeituraEscrita),
+	.MEM0(MEM0),
+	.MEM1(MEM1),
+	.MEM2(MEM2),
+	.MEM3(MEM3),
+	.MEM4(MEM4),
+	.MEM5(MEM5),
+	.MEM6(MEM6),
+	.MEM7(MEM7),
+	.RunProg(RunProg)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// AOut
+initial
+begin
+	repeat(6)
+	begin
+		AOut = 1'b0;
+		AOut = #80000 1'b1;
+		# 80000;
+	end
+	AOut = 1'b0;
+end 
+
+// BOut
+initial
+begin
+	repeat(12)
+	begin
+		BOut = 1'b0;
+		BOut = #40000 1'b1;
+		# 40000;
+	end
+	BOut = 1'b0;
+end 
+
+// COut
+always
+begin
+	COut = 1'b0;
+	COut = #20000 1'b1;
+	#20000;
+end 
+
+// DOut
+always
+begin
+	DOut = 1'b0;
+	DOut = #10000 1'b1;
+	#10000;
+end 
+
+// D0
+initial
+begin
+	D0 = 1'b1;
+	D0 = #10000 1'b0;
+end 
+
+// D1
+initial
+begin
+	D1 = 1'b1;
+	D1 = #10000 1'b0;
+	D1 = #620000 1'b1;
+end 
+
+// D2
+initial
+begin
+	D2 = 1'b1;
+	D2 = #10000 1'b0;
+	D2 = #300000 1'b1;
+	D2 = #320000 1'b0;
+	D2 = #320000 1'b1;
+end 
+
+// D3
+initial
+begin
+	D3 = 1'b1;
+	D3 = #10000 1'b0;
+	D3 = #140000 1'b1;
+	D3 = #160000 1'b0;
+	D3 = #160000 1'b1;
+	D3 = #160000 1'b0;
+	D3 = #160000 1'b1;
+	D3 = #160000 1'b0;
+end 
+
+// D4
+initial
+begin
+	D4 = 1'b1;
+	D4 = #10000 1'b0;
+	D4 = #60000 1'b1;
+	D4 = #80000 1'b0;
+	# 80000;
+	repeat(4)
+	begin
+		D4 = 1'b1;
+		D4 = #80000 1'b0;
+		# 80000;
+	end
+	D4 = 1'b1;
+	D4 = #80000 1'b0;
+end 
+
+// D5
+initial
+begin
+	D5 = 1'b1;
+	D5 = #10000 1'b0;
+	D5 = #20000 1'b1;
+	D5 = #40000 1'b0;
+	# 40000;
+	repeat(11)
+	begin
+		D5 = 1'b1;
+		D5 = #40000 1'b0;
+		# 40000;
+	end
+	D5 = 1'b1;
+end 
+
+// D6
+initial
+begin
+	D6 = 1'b1;
+	D6 = #30000 1'b0;
+	# 20000;
+	repeat(23)
+	begin
+		D6 = 1'b1;
+		D6 = #20000 1'b0;
+		# 20000;
+	end
+	D6 = 1'b1;
+	D6 = #20000 1'b0;
+end 
+
+// D7
+always
+begin
+	D7 = 1'b1;
+	D7 = #10000 1'b0;
+	#10000;
+end 
+
+// LeituraEscrita
+initial
+begin
+	LeituraEscrita = 1'b1;
+	LeituraEscrita = #160000 1'b0;
+end 
+
+// CE
+initial
+begin
+	CE = 1'b1;
+end 
+
+// RunProg
+initial
+begin
+	RunProg = 1'b1;
+	# 2500;
+	repeat(15)
+	begin
+		RunProg = 1'b0;
+		RunProg = #5000 1'b1;
+		# 5000;
+	end
+	RunProg = 1'b0;
+	RunProg = #5000 1'b1;
+	RunProg = #2500 1'b0;
+	RunProg = #300000 1'b1;
+	RunProg = #2500 1'b0;
+	RunProg = #5000 1'b1;
+	# 5000;
+	repeat(52)
+	begin
+		RunProg = 1'b0;
+		RunProg = #5000 1'b1;
+		# 5000;
+	end
+	RunProg = 1'b0;
+	RunProg = #5000 1'b1;
+end 
+endmodule
+

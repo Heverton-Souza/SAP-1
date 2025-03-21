@@ -1,0 +1,197 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Etapa_unica'
+Slack : -12.666
+TNS   : -416.723
+
+Type  : Slow 1200mV 85C Model Setup 'ContadorDeProgramas:inst3|inst2'
+Slack : -6.418
+TNS   : -6.418
+
+Type  : Slow 1200mV 85C Model Setup 'ContadorDeProgramas:inst3|inst1'
+Slack : -6.165
+TNS   : -6.165
+
+Type  : Slow 1200mV 85C Model Setup 'ContadorDeProgramas:inst3|inst3'
+Slack : -5.979
+TNS   : -5.979
+
+Type  : Slow 1200mV 85C Model Setup 'Sinal_clock'
+Slack : -5.240
+TNS   : -5.240
+
+Type  : Slow 1200mV 85C Model Hold 'Sinal_clock'
+Slack : 0.394
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ContadorDeProgramas:inst3|inst1'
+Slack : 0.412
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Etapa_unica'
+Slack : 0.594
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ContadorDeProgramas:inst3|inst2'
+Slack : 0.808
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ContadorDeProgramas:inst3|inst3'
+Slack : 0.876
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'A0'
+Slack : -3.000
+TNS   : -193.336
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Etapa_unica'
+Slack : -3.000
+TNS   : -66.941
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Sinal_clock'
+Slack : -3.000
+TNS   : -4.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ContadorDeProgramas:inst3|inst1'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ContadorDeProgramas:inst3|inst2'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ContadorDeProgramas:inst3|inst3'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Setup 'Etapa_unica'
+Slack : -11.858
+TNS   : -391.843
+
+Type  : Slow 1200mV 0C Model Setup 'ContadorDeProgramas:inst3|inst2'
+Slack : -6.112
+TNS   : -6.112
+
+Type  : Slow 1200mV 0C Model Setup 'ContadorDeProgramas:inst3|inst1'
+Slack : -5.885
+TNS   : -5.885
+
+Type  : Slow 1200mV 0C Model Setup 'ContadorDeProgramas:inst3|inst3'
+Slack : -5.657
+TNS   : -5.657
+
+Type  : Slow 1200mV 0C Model Setup 'Sinal_clock'
+Slack : -4.693
+TNS   : -4.693
+
+Type  : Slow 1200mV 0C Model Hold 'Sinal_clock'
+Slack : 0.352
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ContadorDeProgramas:inst3|inst1'
+Slack : 0.368
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Etapa_unica'
+Slack : 0.481
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ContadorDeProgramas:inst3|inst2'
+Slack : 0.812
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ContadorDeProgramas:inst3|inst3'
+Slack : 0.884
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'A0'
+Slack : -3.000
+TNS   : -200.400
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Etapa_unica'
+Slack : -3.000
+TNS   : -67.283
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Sinal_clock'
+Slack : -3.000
+TNS   : -4.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ContadorDeProgramas:inst3|inst1'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ContadorDeProgramas:inst3|inst2'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ContadorDeProgramas:inst3|inst3'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Fast 1200mV 0C Model Setup 'Etapa_unica'
+Slack : -4.422
+TNS   : -139.986
+
+Type  : Fast 1200mV 0C Model Setup 'Sinal_clock'
+Slack : -2.355
+TNS   : -2.355
+
+Type  : Fast 1200mV 0C Model Setup 'ContadorDeProgramas:inst3|inst2'
+Slack : -2.222
+TNS   : -2.222
+
+Type  : Fast 1200mV 0C Model Setup 'ContadorDeProgramas:inst3|inst1'
+Slack : -2.102
+TNS   : -2.102
+
+Type  : Fast 1200mV 0C Model Setup 'ContadorDeProgramas:inst3|inst3'
+Slack : -2.044
+TNS   : -2.044
+
+Type  : Fast 1200mV 0C Model Hold 'Etapa_unica'
+Slack : 0.124
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Sinal_clock'
+Slack : 0.166
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ContadorDeProgramas:inst3|inst1'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ContadorDeProgramas:inst3|inst2'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ContadorDeProgramas:inst3|inst3'
+Slack : 0.214
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'A0'
+Slack : -3.000
+TNS   : -149.417
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Etapa_unica'
+Slack : -3.000
+TNS   : -54.418
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Sinal_clock'
+Slack : -3.000
+TNS   : -4.060
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ContadorDeProgramas:inst3|inst1'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ContadorDeProgramas:inst3|inst2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ContadorDeProgramas:inst3|inst3'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/SAP-1/SAP1-Project/RAM/simulation/qsim
+vhard_block
+Z1 !s110 1742519316
+!i10b 1
+!s100 C^kZ78k4n00Gm3>;HIfW^3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+InJ6:zKc3bc;IJ0k1f4[o20
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1742519314
+Z5 8RAM.vo
+Z6 FRAM.vo
+!i122 4
+L0 7631 45
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1742519316.000000
+Z9 !s107 RAM.vo|
+Z10 !s90 -work|work|RAM.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vRAM
+R1
+!i10b 1
+!s100 8Pc3D;EJiV3eP=2C^lF:23
+R2
+I7UW<j6Jon]=JDP8cJa4[d2
+R3
+R0
+R4
+R5
+R6
+!i122 4
+L0 32 7598
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@r@a@m
+vRAM_vlg_vec_tst
+R1
+!i10b 1
+!s100 d6f;9jTVN>bj^>@K@AKc;2
+R2
+IeYL96SSoo`iVl>RW[6NcJ0
+R3
+R0
+w1742519312
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 5
+L0 30 238
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R11
+R12
+n@r@a@m_vlg_vec_tst

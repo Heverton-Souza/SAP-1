@@ -1,0 +1,249 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LED7",
+					"strict" : false
+				},
+				{
+					"name" : "Cp",
+					"strict" : false
+				},
+				{
+					"name" : "NHLT",
+					"strict" : false
+				},
+				{
+					"name" : "Ep",
+					"strict" : false
+				},
+				{
+					"name" : "NLb",
+					"strict" : false
+				},
+				{
+					"name" : "Su",
+					"strict" : false
+				},
+				{
+					"name" : "Eu",
+					"strict" : false
+				},
+				{
+					"name" : "NLa",
+					"strict" : false
+				},
+				{
+					"name" : "Ea",
+					"strict" : false
+				},
+				{
+					"name" : "NLm",
+					"strict" : false
+				},
+				{
+					"name" : "NCE",
+					"strict" : false
+				},
+				{
+					"name" : "NL1",
+					"strict" : false
+				},
+				{
+					"name" : "NEi",
+					"strict" : false
+				},
+				{
+					"name" : "NL0",
+					"strict" : false
+				},
+				{
+					"name" : "LED6",
+					"strict" : false
+				},
+				{
+					"name" : "LED5",
+					"strict" : false
+				},
+				{
+					"name" : "LED4",
+					"strict" : false
+				},
+				{
+					"name" : "LED3",
+					"strict" : false
+				},
+				{
+					"name" : "LED2",
+					"strict" : false
+				},
+				{
+					"name" : "LED1",
+					"strict" : false
+				},
+				{
+					"name" : "LED0",
+					"strict" : false
+				},
+				{
+					"name" : "HLT",
+					"strict" : false
+				},
+				{
+					"name" : "opcode0",
+					"strict" : false
+				},
+				{
+					"name" : "opcode1",
+					"strict" : false
+				},
+				{
+					"name" : "opcode2",
+					"strict" : false
+				},
+				{
+					"name" : "opcode3",
+					"strict" : false
+				},
+				{
+					"name" : "w0",
+					"strict" : false
+				},
+				{
+					"name" : "w1",
+					"strict" : false
+				},
+				{
+					"name" : "w2",
+					"strict" : false
+				},
+				{
+					"name" : "w3",
+					"strict" : false
+				},
+				{
+					"name" : "w4",
+					"strict" : false
+				},
+				{
+					"name" : "w5",
+					"strict" : false
+				},
+				{
+					"name" : "w6",
+					"strict" : false
+				},
+				{
+					"name" : "w7",
+					"strict" : false
+				},
+				{
+					"name" : "MEM7",
+					"strict" : false
+				},
+				{
+					"name" : "MEM6",
+					"strict" : false
+				},
+				{
+					"name" : "MEM5",
+					"strict" : false
+				},
+				{
+					"name" : "MEM4",
+					"strict" : false
+				},
+				{
+					"name" : "DRAM",
+					"strict" : false
+				},
+				{
+					"name" : "CRAM",
+					"strict" : false
+				},
+				{
+					"name" : "BRAM",
+					"strict" : false
+				},
+				{
+					"name" : "ARAM",
+					"strict" : false
+				},
+				{
+					"name" : "A3",
+					"strict" : false
+				},
+				{
+					"name" : "RUN_PROG",
+					"strict" : false
+				},
+				{
+					"name" : "A2",
+					"strict" : false
+				},
+				{
+					"name" : "A1",
+					"strict" : false
+				},
+				{
+					"name" : "A0",
+					"strict" : false
+				},
+				{
+					"name" : "LeituraEscrita",
+					"strict" : false
+				},
+				{
+					"name" : "Limpar_Iniciar",
+					"strict" : false
+				},
+				{
+					"name" : "D7",
+					"strict" : false
+				},
+				{
+					"name" : "Etapa_unica",
+					"strict" : false
+				},
+				{
+					"name" : "Manual_Automatico",
+					"strict" : false
+				},
+				{
+					"name" : "D4",
+					"strict" : false
+				},
+				{
+					"name" : "D6",
+					"strict" : false
+				},
+				{
+					"name" : "D5",
+					"strict" : false
+				},
+				{
+					"name" : "D3",
+					"strict" : false
+				},
+				{
+					"name" : "D2",
+					"strict" : false
+				},
+				{
+					"name" : "D1",
+					"strict" : false
+				},
+				{
+					"name" : "D0",
+					"strict" : false
+				},
+				{
+					"name" : "Sinal_clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

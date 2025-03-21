@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SAP1
-Thu Mar 20 00:33:05 2025
+Thu Mar 20 23:05:19 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,16 +43,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 20 00:33:05 2025       ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar 20 23:05:19 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; SAP1                                        ;
 ; Top-level Entity Name              ; SAP1                                        ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 496                                         ;
-;     Total combinational functions  ; 336                                         ;
+; Total logic elements               ; 494                                         ;
+;     Total combinational functions  ; 334                                         ;
 ;     Dedicated logic registers      ; 175                                         ;
 ; Total registers                    ; 175                                         ;
-; Total pins                         ; 56                                          ;
+; Total pins                         ; 64                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                           ; 10M08DAF484C8G     ;                    ;
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
 ; Top-level entity name                                            ; SAP1               ; SAP1               ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
@@ -161,7 +161,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -194,30 +194,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------------+
 ; Resource                                    ; Usage                ;
 +---------------------------------------------+----------------------+
-; Estimated Total logic elements              ; 496                  ;
+; Estimated Total logic elements              ; 494                  ;
 ;                                             ;                      ;
-; Total combinational functions               ; 336                  ;
+; Total combinational functions               ; 334                  ;
 ; Logic element usage by number of LUT inputs ;                      ;
 ;     -- 4 input functions                    ; 148                  ;
-;     -- 3 input functions                    ; 171                  ;
-;     -- <=2 input functions                  ; 17                   ;
+;     -- 3 input functions                    ; 170                  ;
+;     -- <=2 input functions                  ; 16                   ;
 ;                                             ;                      ;
 ; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 336                  ;
+;     -- normal mode                          ; 334                  ;
 ;     -- arithmetic mode                      ; 0                    ;
 ;                                             ;                      ;
 ; Total registers                             ; 175                  ;
 ;     -- Dedicated logic registers            ; 175                  ;
 ;     -- I/O registers                        ; 0                    ;
 ;                                             ;                      ;
-; I/O pins                                    ; 56                   ;
+; I/O pins                                    ; 64                   ;
 ;                                             ;                      ;
 ; Embedded Multiplier 9-bit elements          ; 0                    ;
 ;                                             ;                      ;
 ; Maximum fan-out node                        ; LeituraEscrita~input ;
-; Maximum fan-out                             ; 153                  ;
-; Total fan-out                               ; 1644                 ;
-; Average fan-out                             ; 2.64                 ;
+; Maximum fan-out                             ; 152                  ;
+; Total fan-out                               ; 1659                 ;
+; Average fan-out                             ; 2.60                 ;
 +---------------------------------------------+----------------------+
 
 
@@ -226,13 +226,13 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                     ; Entity Name             ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------+-------------------------+--------------+
-; |SAP1                              ; 336 (2)             ; 175 (1)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 56   ; 0            ; 0          ; |SAP1                                                   ; SAP1                    ; work         ;
+; |SAP1                              ; 334 (2)             ; 175 (1)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 64   ; 0            ; 0          ; |SAP1                                                   ; SAP1                    ; work         ;
 ;    |ContadorDeProgramas:inst3|     ; 4 (4)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|ContadorDeProgramas:inst3                         ; ContadorDeProgramas     ; work         ;
 ;    |MAR:inst9|                     ; 4 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|MAR:inst9                                         ; MAR                     ; work         ;
 ;       |CI74157:inst|               ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|MAR:inst9|CI74157:inst                            ; CI74157                 ; work         ;
 ;       |CI74173:inst2|              ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|MAR:inst9|CI74173:inst2                           ; CI74173                 ; work         ;
-;    |RAM:inst2|                     ; 157 (1)             ; 128 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RAM:inst2                                         ; RAM                     ; work         ;
-;       |CI74189RAM:inst1|           ; 84 (0)              ; 64 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RAM:inst2|CI74189RAM:inst1                        ; CI74189RAM              ; work         ;
+;    |RAM:inst2|                     ; 158 (1)             ; 128 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RAM:inst2                                         ; RAM                     ; work         ;
+;       |CI74189RAM:inst1|           ; 85 (0)              ; 64 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RAM:inst2|CI74189RAM:inst1                        ; CI74189RAM              ; work         ;
 ;          |CelulaDeMemoria:inst19|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RAM:inst2|CI74189RAM:inst1|CelulaDeMemoria:inst19 ; CelulaDeMemoria         ; work         ;
 ;          |CelulaDeMemoria:inst20|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RAM:inst2|CI74189RAM:inst1|CelulaDeMemoria:inst20 ; CelulaDeMemoria         ; work         ;
 ;          |CelulaDeMemoria:inst21|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RAM:inst2|CI74189RAM:inst1|CelulaDeMemoria:inst21 ; CelulaDeMemoria         ; work         ;
@@ -285,7 +285,7 @@ https://fpgasoftware.intel.com/eula.
 ;          |CelulaDeMemoria:inst68|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RAM:inst2|CI74189RAM:inst1|CelulaDeMemoria:inst68 ; CelulaDeMemoria         ; work         ;
 ;          |CelulaDeMemoria:inst69|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RAM:inst2|CI74189RAM:inst1|CelulaDeMemoria:inst69 ; CelulaDeMemoria         ; work         ;
 ;          |CelulaDeMemoria:inst70|  ; 3 (3)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RAM:inst2|CI74189RAM:inst1|CelulaDeMemoria:inst70 ; CelulaDeMemoria         ; work         ;
-;          |CelulaDeMemoria:inst71|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RAM:inst2|CI74189RAM:inst1|CelulaDeMemoria:inst71 ; CelulaDeMemoria         ; work         ;
+;          |CelulaDeMemoria:inst71|  ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RAM:inst2|CI74189RAM:inst1|CelulaDeMemoria:inst71 ; CelulaDeMemoria         ; work         ;
 ;          |CelulaDeMemoria:inst72|  ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RAM:inst2|CI74189RAM:inst1|CelulaDeMemoria:inst72 ; CelulaDeMemoria         ; work         ;
 ;          |CelulaDeMemoria:inst73|  ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RAM:inst2|CI74189RAM:inst1|CelulaDeMemoria:inst73 ; CelulaDeMemoria         ; work         ;
 ;          |CelulaDeMemoria:inst74|  ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RAM:inst2|CI74189RAM:inst1|CelulaDeMemoria:inst74 ; CelulaDeMemoria         ; work         ;
@@ -374,7 +374,7 @@ https://fpgasoftware.intel.com/eula.
 ;    |SomadorSubtrator:inst25|       ; 29 (9)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|SomadorSubtrator:inst25                           ; SomadorSubtrator        ; work         ;
 ;       |CI7483:inst1|               ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|SomadorSubtrator:inst25|CI7483:inst1              ; CI7483                  ; work         ;
 ;       |CI7483:inst2|               ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|SomadorSubtrator:inst25|CI7483:inst2              ; CI7483                  ; work         ;
-;    |acumulador:inst|               ; 59 (59)             ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|acumulador:inst                                   ; acumulador              ; work         ;
+;    |acumulador:inst|               ; 56 (56)             ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|acumulador:inst                                   ; acumulador              ; work         ;
 ;       |CI74173:inst3|              ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|acumulador:inst|CI74173:inst3                     ; CI74173                 ; work         ;
 ;       |CI74173:inst|               ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|acumulador:inst|CI74173:inst                      ; CI74173                 ; work         ;
 ;    |control:inst10|                ; 14 (14)             ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|control:inst10                                    ; control                 ; work         ;
@@ -402,22 +402,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 56                          ;
+; boundary_port         ; 64                          ;
 ; cycloneiii_ff         ; 175                         ;
 ;     CLR               ; 7                           ;
 ;     ENA               ; 32                          ;
 ;     ENA CLR           ; 8                           ;
 ;     plain             ; 128                         ;
-; cycloneiii_io_obuf    ; 12                          ;
-; cycloneiii_lcell_comb ; 356                         ;
-;     normal            ; 356                         ;
+; cycloneiii_io_obuf    ; 16                          ;
+; cycloneiii_lcell_comb ; 354                         ;
+;     normal            ; 354                         ;
 ;         1 data inputs ; 26                          ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 171                         ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 170                         ;
 ;         4 data inputs ; 148                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 4.72                        ;
+; Average LUT depth     ; 4.73                        ;
 +-----------------------+-----------------------------+
 
 
@@ -436,7 +436,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Mar 20 00:32:42 2025
+    Info: Processing started: Thu Mar 20 23:04:55 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SAP1 -c SAP1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -530,10 +530,10 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:inst|CI74173:inst|inst33" to the node "SomadorSubtrator:inst25|CI7483:inst1|inst5" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:inst|CI74173:inst|inst34" to the node "SomadorSubtrator:inst25|CI7483:inst1|inst18" into an OR gate
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegistradorDeInstrucoes:inst5|CI74173:inst3|inst35" to the node "RegistradorSaida:inst7|CI74173:inst|inst25" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegistradorDeInstrucoes:inst5|CI74173:inst3|inst34" to the node "RegistradorSaida:inst7|CI74173:inst|inst24" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegistradorDeInstrucoes:inst5|CI74173:inst3|inst33" to the node "RegistradorSaida:inst7|CI74173:inst|inst23" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegistradorDeInstrucoes:inst5|CI74173:inst3|inst31" to the node "RegistradorSaida:inst7|CI74173:inst|inst22" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegistradorDeInstrucoes:inst5|CI74173:inst3|inst35" to the node "MAR:inst9|CI74173:inst2|inst25" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegistradorDeInstrucoes:inst5|CI74173:inst3|inst34" to the node "MAR:inst9|CI74173:inst2|inst24" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegistradorDeInstrucoes:inst5|CI74173:inst3|inst33" to the node "MAR:inst9|CI74173:inst2|inst23" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegistradorDeInstrucoes:inst5|CI74173:inst3|inst31" to the node "MAR:inst9|CI74173:inst2|inst22" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:inst|inst12" to the node "RegistradorSaida:inst7|CI74173:inst1|inst25" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:inst|inst13" to the node "RegistradorSaida:inst7|CI74173:inst1|inst24" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:inst|inst2" to the node "RegistradorSaida:inst7|CI74173:inst1|inst23" into an OR gate
@@ -541,14 +541,14 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 560 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 566 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
-    Info (21059): Implemented 38 output pins
-    Info (21061): Implemented 504 logic cells
+    Info (21059): Implemented 46 output pins
+    Info (21061): Implemented 502 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 68 warnings
     Info: Peak virtual memory: 4772 megabytes
-    Info: Processing ended: Thu Mar 20 00:33:05 2025
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:42
+    Info: Processing ended: Thu Mar 20 23:05:19 2025
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:43
 
 

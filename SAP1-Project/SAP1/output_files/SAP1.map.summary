@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Mar 20 00:33:05 2025
+Analysis & Synthesis Status : Successful - Thu Mar 20 23:05:19 2025
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : SAP1
 Top-level Entity Name : SAP1
 Family : MAX 10
-Total logic elements : 496
-    Total combinational functions : 336
+Total logic elements : 494
+    Total combinational functions : 334
     Dedicated logic registers : 175
 Total registers : 175
-Total pins : 56
+Total pins : 64
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

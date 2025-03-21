@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "03/20/2025 00:46:16"
+// Generated on "03/20/2025 22:57:11"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          SAP1
 // 
@@ -49,7 +49,11 @@ reg Manual_Automatico;
 reg RUN_PROG;
 reg Sinal_clock;
 // wires                                               
+wire ARAM;
+wire BRAM;
 wire Cp;
+wire CRAM;
+wire DRAM;
 wire Ea;
 wire Ep;
 wire Eu;
@@ -62,6 +66,10 @@ wire LED4;
 wire LED5;
 wire LED6;
 wire LED7;
+wire MEM0;
+wire MEM1;
+wire MEM2;
+wire MEM3;
 wire MEM4;
 wire MEM5;
 wire MEM6;
@@ -95,7 +103,10 @@ SAP1 i1 (
 	.A1(A1),
 	.A2(A2),
 	.A3(A3),
+	.ARAM(ARAM),
+	.BRAM(BRAM),
 	.Cp(Cp),
+	.CRAM(CRAM),
 	.D0(D0),
 	.D1(D1),
 	.D2(D2),
@@ -104,6 +115,7 @@ SAP1 i1 (
 	.D5(D5),
 	.D6(D6),
 	.D7(D7),
+	.DRAM(DRAM),
 	.Ea(Ea),
 	.Ep(Ep),
 	.Etapa_unica(Etapa_unica),
@@ -120,6 +132,10 @@ SAP1 i1 (
 	.LeituraEscrita(LeituraEscrita),
 	.Limpar_Iniciar(Limpar_Iniciar),
 	.Manual_Automatico(Manual_Automatico),
+	.MEM0(MEM0),
+	.MEM1(MEM1),
+	.MEM2(MEM2),
+	.MEM3(MEM3),
 	.MEM4(MEM4),
 	.MEM5(MEM5),
 	.MEM6(MEM6),
@@ -191,11 +207,14 @@ begin
 	A1 = #20000 1'b0;
 	A1 = #40000 1'b1;
 	A1 = #20000 1'b0;
-	A1 = #20000 1'b1;
-	A1 = #20000 1'b0;
-	A1 = #20000 1'b1;
-	A1 = #20000 1'b0;
-	A1 = #20000 1'b1;
+	# 20000;
+	repeat(2)
+	begin
+		A1 = 1'b1;
+		A1 = #20000 1'b0;
+		# 20000;
+	end
+	A1 = 1'b1;
 	A1 = #20000 1'b0;
 end 
 
@@ -216,17 +235,8 @@ begin
 	A0 = #10000 1'b0;
 	A0 = #10000 1'b1;
 	A0 = #10000 1'b0;
-	A0 = #30000 1'b1;
-	# 10000;
-	repeat(4)
-	begin
-		A0 = 1'b0;
-		A0 = #10000 1'b1;
-		# 10000;
-	end
-	A0 = 1'b0;
-	# 10000;
-	repeat(2)
+	# 30000;
+	repeat(7)
 	begin
 		A0 = 1'b1;
 		A0 = #10000 1'b0;
@@ -313,14 +323,15 @@ end
 // LeituraEscrita
 initial
 begin
-	LeituraEscrita = 1'b0;
-	LeituraEscrita = #170000 1'b1;
+	LeituraEscrita = 1'b1;
+	LeituraEscrita = #170000 1'b0;
 end 
 
 // Limpar_Iniciar
 initial
 begin
 	Limpar_Iniciar = 1'b0;
+	Limpar_Iniciar = #170000 1'b1;
 end 
 
 // Manual_Automatico
@@ -332,28 +343,32 @@ end
 // RUN_PROG
 initial
 begin
+	RUN_PROG = 1'b1;
+	# 2700;
+	repeat(16)
+	begin
+		RUN_PROG = 1'b0;
+		RUN_PROG = #5000 1'b1;
+		# 5000;
+	end
 	RUN_PROG = 1'b0;
-	RUN_PROG = #170000 1'b1;
+	RUN_PROG = #5000 1'b1;
+	RUN_PROG = #2300 1'b0;
 end 
 
 // Sinal_clock
 initial
 begin
-	repeat(17)
+	Sinal_clock = 1'b1;
+	# 2500;
+	repeat(99)
 	begin
 		Sinal_clock = 1'b0;
 		Sinal_clock = #5000 1'b1;
 		# 5000;
 	end
 	Sinal_clock = 1'b0;
-	Sinal_clock = #25000 1'b1;
-	# 5000;
-	repeat(80)
-	begin
-		Sinal_clock = 1'b0;
-		Sinal_clock = #5000 1'b1;
-		# 5000;
-	end
+	Sinal_clock = #5000 1'b1;
 end 
 endmodule
 

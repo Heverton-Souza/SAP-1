@@ -156,7 +156,39 @@
 					"strict" : false
 				},
 				{
-					"name" : "LeituraEscrita",
+					"name" : "DRAM",
+					"strict" : false
+				},
+				{
+					"name" : "CRAM",
+					"strict" : false
+				},
+				{
+					"name" : "BRAM",
+					"strict" : false
+				},
+				{
+					"name" : "ARAM",
+					"strict" : false
+				},
+				{
+					"name" : "MEM3",
+					"strict" : false
+				},
+				{
+					"name" : "MEM2",
+					"strict" : false
+				},
+				{
+					"name" : "MEM1",
+					"strict" : false
+				},
+				{
+					"name" : "MEM0",
+					"strict" : false
+				},
+				{
+					"name" : "A3",
 					"strict" : false
 				},
 				{
@@ -164,7 +196,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "A0",
+					"name" : "A2",
 					"strict" : false
 				},
 				{
@@ -172,11 +204,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "A2",
+					"name" : "A0",
 					"strict" : false
 				},
 				{
-					"name" : "A3",
+					"name" : "LeituraEscrita",
 					"strict" : false
 				},
 				{
