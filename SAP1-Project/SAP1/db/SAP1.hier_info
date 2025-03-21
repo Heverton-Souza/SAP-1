@@ -22,7 +22,7 @@ A1 => MAR:inst9.A1
 A2 => MAR:inst9.A2
 A3 => MAR:inst9.A3
 RUN_PROG => MAR:inst9.SELECT
-RUN_PROG => RAM:inst2.RunProg
+RUN_PROG => inst6.IN0
 D3 => RAM:inst2.D3
 D7 => RAM:inst2.D7
 D2 => RAM:inst2.D2
@@ -1805,7 +1805,6 @@ CLR => inst11.ACLR
 CLR => inst12.ACLR
 CLR => inst13.ACLR
 CLR => inst14.ACLR
-CLR => anelCLR.DATAIN
 CLK => inst14.CLK
 CLK => inst13.CLK
 CLK => inst12.CLK
@@ -1838,13 +1837,6 @@ Lb <= inst57.DB_MAX_OUTPUT_PORT_TYPE
 L0 <= inst58.DB_MAX_OUTPUT_PORT_TYPE
 NHLT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 HLT <= inst8.DB_MAX_OUTPUT_PORT_TYPE
-anel0 <= inst23.DB_MAX_OUTPUT_PORT_TYPE
-anel1 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
-anel2 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
-anel3 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-anel4 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
-anel5 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-anelCLR <= CLR.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |SAP1|acumulador:inst

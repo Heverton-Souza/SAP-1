@@ -3,24 +3,24 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'Etapa_unica'
-Slack : -12.478
-TNS   : -404.110
-
-Type  : Slow 1200mV 85C Model Setup 'ContadorDeProgramas:inst3|inst2'
-Slack : -5.812
-TNS   : -5.812
+Slack : -11.646
+TNS   : -381.100
 
 Type  : Slow 1200mV 85C Model Setup 'ContadorDeProgramas:inst3|inst3'
-Slack : -5.800
-TNS   : -5.800
+Slack : -6.245
+TNS   : -6.245
 
 Type  : Slow 1200mV 85C Model Setup 'ContadorDeProgramas:inst3|inst1'
-Slack : -5.796
-TNS   : -5.796
+Slack : -6.221
+TNS   : -6.221
+
+Type  : Slow 1200mV 85C Model Setup 'ContadorDeProgramas:inst3|inst2'
+Slack : -6.049
+TNS   : -6.049
 
 Type  : Slow 1200mV 85C Model Setup 'Sinal_clock'
-Slack : -4.872
-TNS   : -4.872
+Slack : -5.339
+TNS   : -5.339
 
 Type  : Slow 1200mV 85C Model Hold 'Sinal_clock'
 Slack : 0.378
@@ -30,16 +30,16 @@ Type  : Slow 1200mV 85C Model Hold 'ContadorDeProgramas:inst3|inst1'
 Slack : 0.393
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'ContadorDeProgramas:inst3|inst2'
-Slack : 0.673
+Type  : Slow 1200mV 85C Model Hold 'Etapa_unica'
+Slack : 0.575
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'Etapa_unica'
-Slack : 0.680
+Type  : Slow 1200mV 85C Model Hold 'ContadorDeProgramas:inst3|inst2'
+Slack : 0.627
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'ContadorDeProgramas:inst3|inst3'
-Slack : 0.705
+Slack : 0.724
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'A0'
@@ -67,24 +67,24 @@ Slack : -1.403
 TNS   : -1.403
 
 Type  : Slow 1200mV 0C Model Setup 'Etapa_unica'
-Slack : -11.392
-TNS   : -370.442
-
-Type  : Slow 1200mV 0C Model Setup 'ContadorDeProgramas:inst3|inst2'
-Slack : -5.403
-TNS   : -5.403
-
-Type  : Slow 1200mV 0C Model Setup 'ContadorDeProgramas:inst3|inst1'
-Slack : -5.393
-TNS   : -5.393
+Slack : -10.705
+TNS   : -346.284
 
 Type  : Slow 1200mV 0C Model Setup 'ContadorDeProgramas:inst3|inst3'
-Slack : -5.392
-TNS   : -5.392
+Slack : -5.819
+TNS   : -5.819
+
+Type  : Slow 1200mV 0C Model Setup 'ContadorDeProgramas:inst3|inst1'
+Slack : -5.787
+TNS   : -5.787
+
+Type  : Slow 1200mV 0C Model Setup 'ContadorDeProgramas:inst3|inst2'
+Slack : -5.628
+TNS   : -5.628
 
 Type  : Slow 1200mV 0C Model Setup 'Sinal_clock'
-Slack : -4.323
-TNS   : -4.323
+Slack : -4.743
+TNS   : -4.743
 
 Type  : Slow 1200mV 0C Model Hold 'Sinal_clock'
 Slack : 0.339
@@ -95,15 +95,15 @@ Slack : 0.354
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'Etapa_unica'
-Slack : 0.628
+Slack : 0.526
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'ContadorDeProgramas:inst3|inst2'
-Slack : 0.644
+Slack : 0.601
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'ContadorDeProgramas:inst3|inst3'
-Slack : 0.664
+Slack : 0.682
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'A0'
@@ -131,27 +131,27 @@ Slack : -1.403
 TNS   : -1.403
 
 Type  : Fast 1200mV 0C Model Setup 'Etapa_unica'
-Slack : -5.113
-TNS   : -156.372
+Slack : -4.580
+TNS   : -143.319
 
 Type  : Fast 1200mV 0C Model Setup 'Sinal_clock'
-Slack : -2.457
-TNS   : -2.457
-
-Type  : Fast 1200mV 0C Model Setup 'ContadorDeProgramas:inst3|inst2'
-Slack : -2.296
-TNS   : -2.296
+Slack : -2.597
+TNS   : -2.597
 
 Type  : Fast 1200mV 0C Model Setup 'ContadorDeProgramas:inst3|inst3'
-Slack : -2.291
-TNS   : -2.291
+Slack : -2.473
+TNS   : -2.473
 
 Type  : Fast 1200mV 0C Model Setup 'ContadorDeProgramas:inst3|inst1'
-Slack : -2.284
-TNS   : -2.284
+Slack : -2.461
+TNS   : -2.461
+
+Type  : Fast 1200mV 0C Model Setup 'ContadorDeProgramas:inst3|inst2'
+Slack : -2.380
+TNS   : -2.380
 
 Type  : Fast 1200mV 0C Model Hold 'Etapa_unica'
-Slack : 0.011
+Slack : 0.109
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'Sinal_clock'
@@ -163,24 +163,24 @@ Slack : 0.169
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'ContadorDeProgramas:inst3|inst2'
-Slack : 0.183
+Slack : 0.179
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'ContadorDeProgramas:inst3|inst3'
-Slack : 0.228
+Slack : 0.221
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'A0'
 Slack : -3.000
-TNS   : -144.000
+TNS   : -148.565
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Etapa_unica'
 Slack : -3.000
-TNS   : -52.845
+TNS   : -55.177
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Sinal_clock'
 Slack : -3.000
-TNS   : -4.067
+TNS   : -4.058
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ContadorDeProgramas:inst3|inst1'
 Slack : -1.000

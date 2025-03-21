@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SAP1
-Thu Mar 20 23:05:19 2025
+Thu Mar 20 23:23:14 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,13 +43,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 20 23:05:19 2025       ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar 20 23:23:14 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; SAP1                                        ;
 ; Top-level Entity Name              ; SAP1                                        ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 494                                         ;
-;     Total combinational functions  ; 334                                         ;
+; Total logic elements               ; 493                                         ;
+;     Total combinational functions  ; 333                                         ;
 ;     Dedicated logic registers      ; 175                                         ;
 ; Total registers                    ; 175                                         ;
 ; Total pins                         ; 64                                          ;
@@ -194,16 +194,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------------+
 ; Resource                                    ; Usage                ;
 +---------------------------------------------+----------------------+
-; Estimated Total logic elements              ; 494                  ;
+; Estimated Total logic elements              ; 493                  ;
 ;                                             ;                      ;
-; Total combinational functions               ; 334                  ;
+; Total combinational functions               ; 333                  ;
 ; Logic element usage by number of LUT inputs ;                      ;
-;     -- 4 input functions                    ; 148                  ;
+;     -- 4 input functions                    ; 146                  ;
 ;     -- 3 input functions                    ; 170                  ;
-;     -- <=2 input functions                  ; 16                   ;
+;     -- <=2 input functions                  ; 17                   ;
 ;                                             ;                      ;
 ; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 334                  ;
+;     -- normal mode                          ; 333                  ;
 ;     -- arithmetic mode                      ; 0                    ;
 ;                                             ;                      ;
 ; Total registers                             ; 175                  ;
@@ -216,7 +216,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                      ;
 ; Maximum fan-out node                        ; LeituraEscrita~input ;
 ; Maximum fan-out                             ; 152                  ;
-; Total fan-out                               ; 1659                 ;
+; Total fan-out                               ; 1653                 ;
 ; Average fan-out                             ; 2.60                 ;
 +---------------------------------------------+----------------------+
 
@@ -226,7 +226,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                     ; Entity Name             ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------+-------------------------+--------------+
-; |SAP1                              ; 334 (2)             ; 175 (1)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 64   ; 0            ; 0          ; |SAP1                                                   ; SAP1                    ; work         ;
+; |SAP1                              ; 333 (2)             ; 175 (1)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 64   ; 0            ; 0          ; |SAP1                                                   ; SAP1                    ; work         ;
 ;    |ContadorDeProgramas:inst3|     ; 4 (4)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|ContadorDeProgramas:inst3                         ; ContadorDeProgramas     ; work         ;
 ;    |MAR:inst9|                     ; 4 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|MAR:inst9                                         ; MAR                     ; work         ;
 ;       |CI74157:inst|               ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|MAR:inst9|CI74157:inst                            ; CI74157                 ; work         ;
@@ -365,8 +365,8 @@ https://fpgasoftware.intel.com/eula.
 ;    |RegistradorB:inst4|            ; 0 (0)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RegistradorB:inst4                                ; RegistradorB            ; work         ;
 ;       |CI74173:inst1|              ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RegistradorB:inst4|CI74173:inst1                  ; CI74173                 ; work         ;
 ;       |CI74173:inst|               ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RegistradorB:inst4|CI74173:inst                   ; CI74173                 ; work         ;
-;    |RegistradorDeInstrucoes:inst5| ; 67 (0)              ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RegistradorDeInstrucoes:inst5                     ; RegistradorDeInstrucoes ; work         ;
-;       |CI74173:inst3|              ; 67 (67)             ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RegistradorDeInstrucoes:inst5|CI74173:inst3       ; CI74173                 ; work         ;
+;    |RegistradorDeInstrucoes:inst5| ; 66 (0)              ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RegistradorDeInstrucoes:inst5                     ; RegistradorDeInstrucoes ; work         ;
+;       |CI74173:inst3|              ; 66 (66)             ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RegistradorDeInstrucoes:inst5|CI74173:inst3       ; CI74173                 ; work         ;
 ;       |CI74173:inst|               ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RegistradorDeInstrucoes:inst5|CI74173:inst        ; CI74173                 ; work         ;
 ;    |RegistradorSaida:inst7|        ; 0 (0)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RegistradorSaida:inst7                            ; RegistradorSaida        ; work         ;
 ;       |CI74173:inst1|              ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP1|RegistradorSaida:inst7|CI74173:inst1              ; CI74173                 ; work         ;
@@ -409,15 +409,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;     ENA CLR           ; 8                           ;
 ;     plain             ; 128                         ;
 ; cycloneiii_io_obuf    ; 16                          ;
-; cycloneiii_lcell_comb ; 354                         ;
-;     normal            ; 354                         ;
+; cycloneiii_lcell_comb ; 353                         ;
+;     normal            ; 353                         ;
 ;         1 data inputs ; 26                          ;
-;         2 data inputs ; 10                          ;
+;         2 data inputs ; 11                          ;
 ;         3 data inputs ; 170                         ;
-;         4 data inputs ; 148                         ;
+;         4 data inputs ; 146                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 4.73                        ;
+; Average LUT depth     ; 4.78                        ;
 +-----------------------+-----------------------------+
 
 
@@ -426,7 +426,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -436,13 +436,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Mar 20 23:04:55 2025
+    Info: Processing started: Thu Mar 20 23:22:44 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SAP1 -c SAP1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file sap1.bdf
     Info (12023): Found entity 1: SAP1
 Info (12127): Elaborating entity "SAP1" for the top level hierarchy
+Warning (275011): Block or symbol "NOT" of instance "inst6" overlaps another block or symbol
 Warning (12125): Using design file registradorsaida.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: RegistradorSaida
 Info (12128): Elaborating entity "RegistradorSaida" for hierarchy "RegistradorSaida:inst7"
@@ -541,14 +542,14 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 566 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 565 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 46 output pins
-    Info (21061): Implemented 502 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 68 warnings
-    Info: Peak virtual memory: 4772 megabytes
-    Info: Processing ended: Thu Mar 20 23:05:19 2025
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:43
+    Info (21061): Implemented 501 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 69 warnings
+    Info: Peak virtual memory: 4775 megabytes
+    Info: Processing ended: Thu Mar 20 23:23:14 2025
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:49
 
 
