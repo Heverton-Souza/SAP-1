@@ -1,0 +1,40 @@
+|MAR
+CLK => CLK.IN1
+Lm => Lm.IN1
+SELECT => Out.OUTPUTSELECT
+SELECT => Out.OUTPUTSELECT
+SELECT => Out.OUTPUTSELECT
+SELECT => Out.OUTPUTSELECT
+A[0] => Out.DATAB
+A[1] => Out.DATAB
+A[2] => Out.DATAB
+A[3] => Out.DATAB
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+D[3] => D[3].IN1
+Out[0] <= Out.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= Out.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= Out.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= Out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MAR|Ci74173:registrador
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+load => q[0]~reg0.ENA
+load => q[1]~reg0.ENA
+load => q[2]~reg0.ENA
+load => q[3]~reg0.ENA
+o[0] => q[0]~reg0.DATAIN
+o[1] => q[1]~reg0.DATAIN
+o[2] => q[2]~reg0.DATAIN
+o[3] => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

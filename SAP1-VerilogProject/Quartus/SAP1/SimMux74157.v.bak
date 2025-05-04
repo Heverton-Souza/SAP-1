@@ -1,0 +1,44 @@
+`timescale 1ns / 1ps
+
+module SimMux74157;
+
+    // Entradas
+    reg select;
+    reg [3:0] a;
+    reg [3:0] b;
+
+    // Saída
+    wire [3:0] out;
+
+    // Instancia o módulo mux
+    Mux74157 DUT (
+        .SELECT(select),
+        .A(a),
+        .D(b),
+        .Out(out)
+    );
+
+    initial begin
+        // Exibe valores durante a simulação
+        $monitor("Time=%0t | sel=%b | a=%b | b=%b | y=%b", $time, sel, a, b, y);
+
+        // Teste 1: sel = 0, deve escolher 'a'
+        sel = 0; a = 4'b1010; b = 4'b0101; #10;
+
+        // Teste 2: sel = 1, deve escolher 'b'
+        sel = 1; a = 4'b1010; b = 4'b0101; #10;
+
+        // Teste 3: entradas diferentes
+        sel = 0; a = 4'b1111; b = 4'b0000; #10;
+        sel = 1; a = 4'b1111; b = 4'b0000; #10;
+
+        // Teste 4: mudar entradas enquanto sel permanece
+        a = 4'b0011; b = 4'b1100; #10;
+        sel = 0; #10;
+        sel = 1; #10;
+
+        // Finaliza simulação
+        $finish;
+    end
+
+endmodule

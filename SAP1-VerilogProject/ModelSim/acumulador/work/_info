@@ -1,0 +1,106 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/SAP-1/SAP1-VerilogProject/ModelSim/Ci74173
+vacumulador
+Z0 !s110 1746391232
+!i10b 1
+!s100 X@eXk:_k@zZ7?z0QG]I6Y0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I3c^hdYkGI]=InY734V5K?3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/SAP-1/SAP1-VerilogProject/ModelSim/acumulador
+w1746388963
+8D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/acumulador.v
+FD:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/acumulador.v
+!i122 30
+L0 1 33
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1746391232.000000
+!s107 D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/acumulador.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/acumulador.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vCi74173
+R0
+!i10b 1
+!s100 GZ4122`dM^L0j;^NEl@`F0
+R1
+I4Tzb0@]`3kj`LHP];dnb71
+R2
+R3
+w1746387359
+8D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/Ci74173.v
+FD:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/Ci74173.v
+!i122 32
+L0 1 11
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/Ci74173.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/Ci74173.v|
+!i113 1
+R6
+R7
+n@ci74173
+vSimAcumulador
+R0
+!i10b 1
+!s100 8@FLNi1<DmnPA10GFUjPA2
+R1
+IHP1bo6_0IU]5JRo1cRn_U3
+R2
+R3
+w1746391069
+8D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimAcumulador.v
+FD:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimAcumulador.v
+!i122 31
+L0 2 53
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimAcumulador.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimAcumulador.v|
+!i113 1
+R6
+R7
+n@sim@acumulador
+vSimReg74173
+!s110 1746391233
+!i10b 1
+!s100 P5S>2T=61ZY`iNzFH^hgQ2
+R1
+IXl<]UHP3<22KHOZim0^AK3
+R2
+R3
+w1746387100
+8D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimCi74173.v
+FD:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimCi74173.v
+!i122 33
+L0 2 42
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimCi74173.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimCi74173.v|
+!i113 1
+R6
+R7
+n@sim@reg74173

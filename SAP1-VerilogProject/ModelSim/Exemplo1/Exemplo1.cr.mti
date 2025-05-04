@@ -1,0 +1,15 @@
+C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/Exemplo/Exemplo1.v {1 {vlog -work work -stats=none C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/Exemplo/Exemplo1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Exemplo1
+
+Top level modules:
+	Exemplo1
+
+} {} {}} C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/Exemplo/TestaExemplo1.v {1 {vlog -work work -stats=none C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/Exemplo/TestaExemplo1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TestaExemplo1
+
+Top level modules:
+	TestaExemplo1
+
+} {} {}}

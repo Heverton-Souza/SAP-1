@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/ModelSim/RAM
+vRAM
+Z0 !s110 1745585582
+!i10b 1
+!s100 MoPdc:g_>mP9O79co2o[Z0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ILad6HT1=@eU^L9l[RgKHD3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/ModelSim
+w1745582004
+8C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/RAM.v
+FC:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/RAM.v
+!i122 6
+L0 1 29
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1745585582.000000
+!s107 C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/RAM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/RAM.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@r@a@m
+vSimRAM
+R0
+!i10b 1
+!s100 IMHLJ=3k2?9]]IZim9BV61
+R1
+I8Iz@n@?;@AkR0GUAS@OMf0
+R2
+R3
+w1745585561
+8C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/SimRAM.v
+FC:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/SimRAM.v
+!i122 7
+L0 2 54
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/SimRAM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/SimRAM.v|
+!i113 1
+R6
+R7
+n@sim@r@a@m

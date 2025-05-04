@@ -1,0 +1,58 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Quartus
+vmux74157
+Z0 !s110 1746385665
+!i10b 1
+!s100 kADa7LN5oif8JcAZ`G1Mo0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ib1kz9N>]ADA`?:oY1nS=R2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/SAP-1/SAP1-VerilogProject/ModelSim/mux74157
+w1746382738
+8D:\SAP-1\SAP1-VerilogProject\Quartus\SAP1\mux74157.v
+FD:\SAP-1\SAP1-VerilogProject\Quartus\SAP1\mux74157.v
+!i122 8
+L0 1 8
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1746385665.000000
+!s107 D:\SAP-1\SAP1-VerilogProject\Quartus\SAP1\mux74157.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\SAP-1\SAP1-VerilogProject\Quartus\SAP1\mux74157.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vSimMux74157
+R0
+!i10b 1
+!s100 [8jX:=]=FlUf;UOTAIod_3
+R1
+I:3QVL6ED9n8BaeG38ef^C0
+R2
+R3
+w1746385658
+8D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimMux74157.v
+FD:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimMux74157.v
+!i122 9
+L0 3 43
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimMux74157.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimMux74157.v|
+!i113 1
+R6
+R7
+n@sim@mux74157

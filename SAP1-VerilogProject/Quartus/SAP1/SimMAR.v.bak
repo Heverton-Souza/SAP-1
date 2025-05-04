@@ -1,0 +1,56 @@
+`timescale 1ns/1ps
+module SimMAR;
+
+    // Entradas
+    reg CLK;
+    reg LOAD;
+    reg SELECT;
+    reg [3:0] A; // Entrada do modo programação
+    reg [3:0] D; // Entrada do barramento central
+
+    // Saída
+    wire [3:0] OUT;
+
+    // Instancia o módulo MAR
+    MAR DUT (
+        .clk(CLK),
+        .load(LOAD),
+        .select(SELECT),
+        .a(A),
+        .d(D),
+        .out(OUT)
+    );
+
+    // Geração de clock (20ns período)
+    initial begin
+        CLK = 0;
+        forever #10 CLK = ~CLK;
+    end
+
+    // Sequência de teste
+    initial begin
+        // Inicializa sinais
+        LOAD = 0;
+        SELECT = 0;
+        A = 4'b0000;
+        D = 4'b0000;
+
+        // Aguarda 20ns
+        #20 A = 4'b1010;
+            SELECT = 0;  // Modo programação
+        #20; 
+
+        // Carrega valor no registrador
+        #20 D = 4'b1100;
+            LOAD = 1;
+        #20 LOAD = 0;
+
+        // Muda para modo execução (usa saída do registrador)
+        #20 SELECT = 1;
+
+        // Muda entrada D mas sem novo load (registrador deve manter valor anterior)
+        #20 D = 4'b0101;
+
+    end
+
+endmodule

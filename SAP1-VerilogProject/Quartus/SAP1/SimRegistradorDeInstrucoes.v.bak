@@ -1,0 +1,95 @@
+`timescale 1ns/1ps
+module SimRegistradorDeInstrucoes;
+
+    // Entradas do módulo registradorDeInstrucoes
+    reg CLK;
+    reg LOAD;
+    reg CLR_MSB;
+    reg EI_LSB;
+    reg [7:0] ENTRADA_INSTRUCAO;
+
+    // Saída do módulo registradorDeInstrucoes
+    wire [7:0] SAIDA_INSTRUCAO;
+
+    // Instancia o módulo registradorDeInstrucoes
+    registradorDeInstrucoes DUT (
+        .clk(CLK),
+        .load(LOAD),
+        .clr_msb(CLR_MSB),
+        .ei_lsb(EI_LSB),
+        .entrada_instrucao(ENTRADA_INSTRUCAO),
+        .saida_instrucao(SAIDA_INSTRUCAO)
+    );
+
+    // Geração de clock (20ns período)
+    initial begin
+        CLK = 0;
+        forever #10 CLK = ~CLK;
+    end
+
+    // Sequência de teste
+    initial begin
+        // Inicializa sinais
+        LOAD = 0;
+        CLR_MSB = 0;
+        EI_LSB = 0;
+        ENTRADA_INSTRUCAO = 8'b00000000;
+
+        // Aguarda um período de clock
+        #20;
+
+        // Carrega uma instrução completa (LSB e MSB habilitados)
+        ENTRADA_INSTRUCAO = 8'b10110011;
+        LOAD = 1;
+        EI_LSB = 1;
+        #20;
+        LOAD = 0;
+        EI_LSB = 0;
+
+        // Aguarda um período para verificar a saída
+        #20;
+
+        // Tenta carregar apenas os LSB (EI_LSB = 1, LOAD = 1, CLR_MSB = 0)
+        ENTRADA_INSTRUCAO = 8'b11110000;
+        LOAD = 1;
+        EI_LSB = 1;
+        CLR_MSB = 0;
+        #20;
+        LOAD = 0;
+        EI_LSB = 0;
+        CLR_MSB = 0;
+
+        // Aguarda um período para verificar a saída (MSB deve permanecer o mesmo)
+        #20;
+
+        // Tenta carregar apenas os MSB (EI_LSB = 0, LOAD = 1, CLR_MSB = 0)
+        ENTRADA_INSTRUCAO = 8'b00001111;
+        LOAD = 1;
+        EI_LSB = 0;
+        CLR_MSB = 0;
+        #20;
+        LOAD = 0;
+        EI_LSB = 0;
+        CLR_MSB = 0;
+
+        // Aguarda um período para verificar a saída (LSB deve permanecer o mesmo)
+        #20;
+
+        // Limpa os MSB (CLR_MSB = 1)
+        CLR_MSB = 1;
+        #20;
+        CLR_MSB = 0;
+
+        // Aguarda para verificar se os MSB foram zerados
+        #20;
+
+        // Tenta carregar com LOAD desativado
+        ENTRADA_INSTRUCAO = 8'b10101010;
+        LOAD = 0;
+        EI_LSB = 1;
+        CLR_MSB = 0;
+        #20;
+
+    end
+
+endmodule 

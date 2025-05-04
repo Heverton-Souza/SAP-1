@@ -1,0 +1,80 @@
+# Compile of RAM.v was successful.
+# Compile of SimRAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.SimRAM
+# vsim -gui work.SimRAM 
+# Start time: 09:36:26 on Apr 25,2025
+# Loading work.SimRAM
+# Loading work.RAM
+# ** Error: (vsim-3063) Port 'endereco' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SimRAM/DUT File: C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/SimRAM.v Line: 10
+# ** Error: (vsim-3063) Port 'dado_in' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SimRAM/DUT File: C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/SimRAM.v Line: 10
+# ** Error: (vsim-3063) Port 'RunProg' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SimRAM/DUT File: C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/SimRAM.v Line: 10
+# ** Error: (vsim-3063) Port 'CE' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SimRAM/DUT File: C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/SimRAM.v Line: 10
+# ** Error: (vsim-3063) Port 'LeituraEscrita' not found in the connected module (5th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SimRAM/DUT File: C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/SimRAM.v Line: 10
+# ** Error: (vsim-3063) Port 'dado_out' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SimRAM/DUT File: C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/SimRAM.v Line: 10
+# Error loading design
+# End time: 09:36:26 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 7
+# Compile of RAM.v was successful.
+# Compile of SimRAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.SimRAM
+# vsim -gui work.SimRAM 
+# Start time: 09:41:27 on Apr 25,2025
+# Loading work.SimRAM
+# Loading work.RAM
+# ** Error: (vsim-3063) Port 'endereco' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SimRAM/DUT File: C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/SimRAM.v Line: 10
+# ** Error: (vsim-3063) Port 'dado_in' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SimRAM/DUT File: C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/SimRAM.v Line: 10
+# ** Error: (vsim-3063) Port 'RunProg' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SimRAM/DUT File: C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/SimRAM.v Line: 10
+# ** Error: (vsim-3063) Port 'CE' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SimRAM/DUT File: C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/SimRAM.v Line: 10
+# ** Error: (vsim-3063) Port 'LeituraEscrita' not found in the connected module (5th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SimRAM/DUT File: C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/SimRAM.v Line: 10
+# ** Error: (vsim-3063) Port 'dado_out' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SimRAM/DUT File: C:/Users/aluno/Documents/Fred-Embarcados/ModelSim-Quartus/Quartus/RAM/SimRAM.v Line: 10
+# Error loading design
+# End time: 09:41:27 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 2
+# Compile of RAM.v was successful.
+# Compile of SimRAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.SimRAM
+# vsim -gui work.SimRAM 
+# Start time: 09:46:51 on Apr 25,2025
+# Loading work.SimRAM
+# Loading work.RAM
+add wave -position end  sim:/SimRAM/Endereco
+add wave -position end  sim:/SimRAM/Dado_In
+add wave -position end  sim:/SimRAM/RunProg_
+add wave -position end  sim:/SimRAM/CE_
+add wave -position end  sim:/SimRAM/LeituraEscrita_
+add wave -position end  sim:/SimRAM/Dado_Out
+run
+# Compile of RAM.v was successful.
+# Compile of SimRAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.SimRAM
+# End time: 09:53:26 on Apr 25,2025, Elapsed time: 0:06:35
+# Errors: 0, Warnings: 3
+# vsim -gui work.SimRAM 
+# Start time: 09:53:26 on Apr 25,2025
+# Loading work.SimRAM
+# Loading work.RAM
+add wave -position end  sim:/SimRAM/Endereco
+add wave -position end  sim:/SimRAM/Dado_In
+add wave -position end  sim:/SimRAM/RunProg_
+add wave -position end  sim:/SimRAM/CE_
+add wave -position end  sim:/SimRAM/LeituraEscrita_
+add wave -position end  sim:/SimRAM/Dado_Out
+run
+# End time: 09:56:28 on Apr 25,2025, Elapsed time: 0:03:02
+# Errors: 0, Warnings: 2

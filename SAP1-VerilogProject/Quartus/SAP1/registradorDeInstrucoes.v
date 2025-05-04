@@ -1,0 +1,33 @@
+module registradorDeInstrucoes (
+    input clk,
+    input load,
+    input clr_msb, // Clear para os 4 bits mais significativos
+    input ei_lsb,  // Enable Input para os 4 bits menos significativos
+    input [7:0] entrada_instrucao, // Input da instrução de 8 bits
+    output [7:0] saida_instrucao // Output da instrução de 8 bits
+);
+
+    // Registradores para armazenar os bits
+    reg [3:0] instrucao_lsb; // 4 bits menos significativos
+    reg [3:0] instrucao_msb; // 4 bits mais significativos
+
+    // Lógica para os 4 bits menos significativos
+    always @(posedge clk) begin
+        if (ei_lsb && load) begin
+            instrucao_lsb <= entrada_instrucao[3:0];
+        end
+    end
+
+    // Lógica para os 4 bits mais significativos
+    always @(posedge clk or posedge clr_msb) begin
+        if (clr_msb) begin
+            instrucao_msb <= 4'b0000;
+        end else if (load) begin
+            instrucao_msb <= entrada_instrucao[7:4];
+        end
+    end
+
+    // Concatena os bits para a saída
+    assign saida_instrucao = {instrucao_msb, instrucao_lsb};
+
+endmodule

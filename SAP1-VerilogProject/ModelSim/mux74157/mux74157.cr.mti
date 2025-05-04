@@ -1,0 +1,15 @@
+D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/mux74157.v {1 {vlog -work work -stats=none {D:\SAP-1\SAP1-VerilogProject\Quartus\SAP1\mux74157.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux74157
+
+Top level modules:
+	mux74157
+
+} {} {}} D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimMux74157.v {1 {vlog -work work -stats=none D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimMux74157.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module SimMux74157
+
+Top level modules:
+	SimMux74157
+
+} {} {}}

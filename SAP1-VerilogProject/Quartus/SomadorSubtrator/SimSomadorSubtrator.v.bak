@@ -1,0 +1,17 @@
+`timescale 1ns/1ps
+module TestaExemplo1;
+wire y;
+reg a,b,c;
+
+Exemplo1 DUT(a,b,c,y);
+initial 
+	begin
+		a=0;b=0;c=0;
+		#20 c=1;
+		#20 b=1;
+		#20 c=0;
+		#20 a=1;
+		#20 c=1;
+		#20 b=0;
+		#20 c=0;
+	end

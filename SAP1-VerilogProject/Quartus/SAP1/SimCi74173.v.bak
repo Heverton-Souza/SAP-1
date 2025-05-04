@@ -1,0 +1,24 @@
+`timescale 1ns/1ps
+module SimCi74173 (
+    input clk,         // Clock (CP)
+    input mr,          // Master Reset (ativo alto aqui para simplificação)
+    input ne1,         // Enable (ativo baixo)
+    input noe1,        // Output Enable (ativo baixo)
+    input [3:0] o,     // Entradas de dados O0 a O3
+    output [3:0] q     // Saída tri-state
+);
+
+    reg [3:0] temp;
+
+    // Reset assíncrono e carga síncrona com enable
+    always @(posedge clk or posedge mr) begin
+        if (mr)
+            temp <= 4'b0000;
+        else if (!ne1)
+            temp <= o;
+    end
+
+    // Saída tri-state controlada por NOE
+    assign q = (!noe1) ? temp : 4'bz;
+
+endmodule

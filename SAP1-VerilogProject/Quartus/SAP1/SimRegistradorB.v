@@ -1,0 +1,43 @@
+`timescale 1ns/1ps
+module SimRegistradorB;
+
+    // Entradas
+    reg CLK;
+    reg Lb;
+    reg [7:0] Entrada;
+
+    // Saída
+    wire [7:0] ParaULA;
+
+    // Instancia o módulo do registrador B
+    registradorB DUT (
+        .CLK(CLK),
+        .Lb(Lb),
+        .entrada(Entrada),
+        .para_ula(ParaULA)
+    );
+
+    // Geração de clock (20ns de período)
+    initial begin
+        CLK = 0;
+        forever #10 CLK = ~CLK;
+    end
+
+    // Sequência de teste
+    initial begin
+        // Inicialização
+        Lb = 0;
+        Entrada = 8'b00000000;
+
+        // Aguarda 20ns
+        #20 Entrada = 8'b11110000;
+        Lb = 1;
+
+        // Troca a entrada
+        #20 Entrada = 8'b00001111;
+		  
+		  #20 Entrada = 8'b11110000;
+
+    end
+
+endmodule

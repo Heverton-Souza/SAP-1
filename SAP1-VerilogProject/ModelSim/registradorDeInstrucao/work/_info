@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/SAP-1/SAP1-VerilogProject/ModelSim/registradorSaida
+vregistradorDeInstrucoes
+Z0 !s110 1746397413
+!i10b 1
+!s100 ?62h_^b7gh><<V?`SB?lb1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IiY^?SUkFho[T]I0ga2FYz1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/SAP-1/SAP1-VerilogProject/ModelSim/registradorDeInstrucao
+w1746396880
+8D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/registradorDeInstrucoes.v
+FD:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/registradorDeInstrucoes.v
+!i122 0
+L0 1 33
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1746397412.000000
+!s107 D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/registradorDeInstrucoes.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/registradorDeInstrucoes.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+nregistrador@de@instrucoes
+vSimRegistradorDeInstrucoes
+R0
+!i10b 1
+!s100 Wk3Q7@gE1cATR3Oa0HGdK0
+R1
+I1PaACz6Cf;Zo<iT9S^`>B1
+R2
+R3
+w1746396756
+8D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimRegistradorDeInstrucoes.v
+FD:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimRegistradorDeInstrucoes.v
+!i122 1
+L0 2 94
+R4
+r1
+!s85 0
+31
+!s108 1746397413.000000
+!s107 D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimRegistradorDeInstrucoes.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimRegistradorDeInstrucoes.v|
+!i113 1
+R5
+R6
+n@sim@registrador@de@instrucoes

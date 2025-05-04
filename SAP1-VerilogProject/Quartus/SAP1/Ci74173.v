@@ -1,0 +1,11 @@
+module Ci74173 (
+    input clk,
+    input load,
+    input [3:0] o,
+    output reg [3:0] q
+);
+    always @(posedge clk) begin
+        if (load)
+            q <= o;
+    end
+endmodule 

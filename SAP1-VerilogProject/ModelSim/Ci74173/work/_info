@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/SAP-1/SAP1-VerilogProject/ModelSim/mux74157
+vCi74173
+!s110 1746389088
+!i10b 1
+!s100 GZ4122`dM^L0j;^NEl@`F0
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I4Tzb0@]`3kj`LHP];dnb71
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/SAP-1/SAP1-VerilogProject/ModelSim/Ci74173
+w1746387359
+8D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/Ci74173.v
+FD:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/Ci74173.v
+!i122 2
+L0 1 11
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z4 !s108 1746389088.000000
+!s107 D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/Ci74173.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/Ci74173.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@ci74173
+vSimReg74173
+!s110 1746389089
+!i10b 1
+!s100 P5S>2T=61ZY`iNzFH^hgQ2
+R0
+IXl<]UHP3<22KHOZim0^AK3
+R1
+R2
+w1746387100
+8D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimCi74173.v
+FD:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimCi74173.v
+!i122 3
+L0 2 42
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimCi74173.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimCi74173.v|
+!i113 1
+R5
+R6
+n@sim@reg74173
