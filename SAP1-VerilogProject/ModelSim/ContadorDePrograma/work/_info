@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/SAP-1/SAP1-VerilogProject/ModelSim/ULA
+vcontadorDePrograma
+!s110 1746758403
+!i10b 1
+!s100 50IlA:lnQ0kdCP?H0MVEW0
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ia:TkOgece;SYXzj2AS<cD2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/SAP-1/SAP1-VerilogProject/ModelSim/ContadorDePrograma
+w1746757875
+8D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/contadorDePrograma.v
+FD:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/contadorDePrograma.v
+!i122 2
+L0 1 28
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z4 !s108 1746758403.000000
+!s107 D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/contadorDePrograma.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/contadorDePrograma.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+ncontador@de@programa
+vSimContadorDePrograma
+!s110 1746758404
+!i10b 1
+!s100 Fc677oC];N9ngEAkYf;G]0
+R0
+I_[[deDX1g]WG^S9OgU=`P2
+R1
+R2
+w1746758388
+8D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimContadorDePrograma.v
+FD:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimContadorDePrograma.v
+!i122 3
+L0 2 70
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimContadorDePrograma.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimContadorDePrograma.v|
+!i113 1
+R5
+R6
+n@sim@contador@de@programa

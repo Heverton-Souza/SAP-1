@@ -1,0 +1,58 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/SAP-1/SAP1-VerilogProject/ModelSim/MAR
+vSimULA
+!s110 1746756924
+!i10b 1
+!s100 3djQ1CHV@ImR64_H=F<JV0
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I5a][[]fX>GZ]>2MAj68L:0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/SAP-1/SAP1-VerilogProject/ModelSim/ULA
+w1746756920
+8D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimUla.v
+FD:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimUla.v
+!i122 2
+L0 2 65
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1746756924.000000
+!s107 D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimUla.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimUla.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@sim@u@l@a
+vula
+!s110 1746756925
+!i10b 1
+!s100 KWdhB<S=7XO1zO[@GC?Q=1
+R0
+I]4iL@8PY]c0MonVkC33J43
+R1
+R2
+w1746756560
+8D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/ula.v
+FD:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/ula.v
+!i122 3
+L0 1 34
+R3
+r1
+!s85 0
+31
+!s108 1746756925.000000
+!s107 D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/ula.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/ula.v|
+!i113 1
+R4
+R5

@@ -1,6 +1,6 @@
 module registradorSaida (
     input CLK,
-    input Lo,                    // Load do acumulador
+    input Lo,                    // Load do registrador de Saida
     input [7:0] entrada,         // Vindo do barramento
     output [7:0] saida      		
 );

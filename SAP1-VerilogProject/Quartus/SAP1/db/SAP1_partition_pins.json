@@ -4,47 +4,51 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Out[0]",
+					"name" : "Cp",
 					"strict" : false
 				},
 				{
-					"name" : "Out[1]",
+					"name" : "Ep",
 					"strict" : false
 				},
 				{
-					"name" : "Out[2]",
+					"name" : "Ej",
 					"strict" : false
 				},
 				{
-					"name" : "Out[3]",
+					"name" : "Eu",
 					"strict" : false
 				},
 				{
-					"name" : "A[0]",
+					"name" : "Add",
 					"strict" : false
 				},
 				{
-					"name" : "SELECT",
+					"name" : "Sub",
 					"strict" : false
 				},
 				{
-					"name" : "A[1]",
+					"name" : "AndOp",
 					"strict" : false
 				},
 				{
-					"name" : "A[2]",
+					"name" : "OrOp",
 					"strict" : false
 				},
 				{
-					"name" : "A[3]",
+					"name" : "XorOp",
 					"strict" : false
 				},
 				{
-					"name" : "D[0]",
+					"name" : "NotOp",
 					"strict" : false
 				},
 				{
-					"name" : "CLK",
+					"name" : "La",
+					"strict" : false
+				},
+				{
+					"name" : "Lb",
 					"strict" : false
 				},
 				{
@@ -52,15 +56,39 @@
 					"strict" : false
 				},
 				{
-					"name" : "D[1]",
+					"name" : "CE",
 					"strict" : false
 				},
 				{
-					"name" : "D[2]",
+					"name" : "L1",
 					"strict" : false
 				},
 				{
-					"name" : "D[3]",
+					"name" : "Ei",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "CLR",
 					"strict" : false
 				}
 			]

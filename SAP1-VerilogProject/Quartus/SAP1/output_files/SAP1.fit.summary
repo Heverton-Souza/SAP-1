@@ -1,15 +1,15 @@
-Fitter Status : Successful - Sun May 04 20:40:50 2025
+Fitter Status : Successful - Fri May 09 00:47:06 2025
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : SAP1
-Top-level Entity Name : MAR
+Top-level Entity Name : unidadeDeControle
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 5 / 49,760 ( < 1 % )
-    Total combinational functions : 5 / 49,760 ( < 1 % )
-    Dedicated logic registers : 4 / 49,760 ( < 1 % )
-Total registers : 4
-Total pins : 15 / 360 ( 4 % )
+Total logic elements : 26 / 49,760 ( < 1 % )
+    Total combinational functions : 26 / 49,760 ( < 1 % )
+    Dedicated logic registers : 3 / 49,760 ( < 1 % )
+Total registers : 3
+Total pins : 24 / 360 ( 7 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )

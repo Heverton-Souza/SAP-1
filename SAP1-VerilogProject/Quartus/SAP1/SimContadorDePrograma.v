@@ -1,5 +1,4 @@
 `timescale 1ns/1ps
-
 module SimContadorDePrograma;
 
     // Entradas
@@ -10,10 +9,10 @@ module SimContadorDePrograma;
     reg Ej;
     reg [3:0] Addr;
 
-    // Saídas
-    wire Out0, Out1, Out2, Out3;
+    // Saída
+    wire [3:0] Out;
 
-    // Instancia o módulo
+    // Instancia o módulo do contador de programa
     contadorDePrograma DUT (
         .Cp(Cp),
         .CLK(CLK),
@@ -21,50 +20,52 @@ module SimContadorDePrograma;
         .Ep(Ep),
         .Ej(Ej),
         .Addr(Addr),
-        .Out0(Out0),
-        .Out1(Out1),
-        .Out2(Out2),
-        .Out3(Out3)
+        .Out(Out)
     );
 
-    // Geração de clock
+    // Geração de clock: 20ns de período (alternando a cada 10ns)
     initial begin
         CLK = 0;
-        forever #10 CLK = ~CLK; // Clock de 20ns
+        forever #10 CLK = ~CLK;
     end
 
     // Sequência de teste
     initial begin
         // Inicialização
-        CLR = 1; Cp = 0; Ep = 0; Ej = 0; Addr = 4'b0000;
-        #25 CLR = 0;
-
-        // Incremento normal do PC
-        Cp = 1; Ep = 1;
-        #40; // 2 ciclos de clock
-
-        // Pausa no incremento
         Cp = 0;
-        #20;
+        CLR = 0;
+        Ep = 0;
+        Ej = 0;
+        Addr = 4'b0000;
 
-        // JUMP para endereço 1010
-        Addr = 4'b1010;
-        Ej = 1;
+        // Aguarda uma borda de clock e reseta
+        #5 CLR = 1;
+        #20 CLR = 0;
+
+        // Ativa Cp e Ep para começar a contar
+        #10 Ep = 1; Cp = 1;
+
+        // Deixa contar por 3 ciclos
+        #60;
+
+        // Testa um jump para endereço 0b1010
+        #10 Ej = 1;
+            Addr = 4'b1010;
         #20 Ej = 0;
 
-        // Incrementa a partir do endereço novo
-        Cp = 1;
+        // Continua contando por mais 2 ciclos
         #40;
 
-        // Teste de tri-state (Ep = 0)
-        Ep = 0;
-        #20;
+        // Desativa Ep (parar de mostrar saída)
+        #10 Ep = 0;
+		  
+		  #20;
+		  
+		  #10 Ep = 1;
 
-        // Volta Ep para 1 para ver a saída novamente
-        Ep = 1;
-        #20;
+        // Aguarda mais alguns ciclos (o valor não deve mais sair)
+        #40;
 
-        $stop; // Encerra a simulação
     end
 
 endmodule

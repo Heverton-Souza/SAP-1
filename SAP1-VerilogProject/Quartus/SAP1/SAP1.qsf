@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "MAX 10"
 set_global_assignment -name DEVICE 10M50DAF484C7G
-set_global_assignment -name TOP_LEVEL_ENTITY MAR
+set_global_assignment -name TOP_LEVEL_ENTITY unidadeDeControle
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:40:59  MAY 04, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -49,6 +49,10 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VERILOG_FILE ula.v
+set_global_assignment -name VERILOG_FILE SimUla.v
+set_global_assignment -name VERILOG_FILE SimContadorDePrograma.v
+set_global_assignment -name VERILOG_FILE contadorDePrograma.v
 set_global_assignment -name VERILOG_FILE SimMAR.v
 set_global_assignment -name VERILOG_FILE SimRAM.v
 set_global_assignment -name VERILOG_FILE RAM.v
@@ -66,7 +70,10 @@ set_global_assignment -name VERILOG_FILE SimRegistradorSaida.v
 set_global_assignment -name VERILOG_FILE registradorDeInstrucoes.v
 set_global_assignment -name VERILOG_FILE SimRegistradorDeInstrucoes.v
 set_global_assignment -name VERILOG_FILE MAR.v
+set_global_assignment -name VERILOG_FILE unidadeDeControle.v
+set_global_assignment -name VERILOG_FILE SimUnidadeDeControle.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VERILOG_FILE SimSAP1.v

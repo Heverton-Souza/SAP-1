@@ -1,6 +1,6 @@
 module registradorB (
     input CLK,
-    input Lb,                    // Load do acumulador
+    input Lb,                    // Load do registrador B
     input [7:0] entrada,         // Vindo do barramento
     output [7:0] para_ula       // Sempre ativo
 );

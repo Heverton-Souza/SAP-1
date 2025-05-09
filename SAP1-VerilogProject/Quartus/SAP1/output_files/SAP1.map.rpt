@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SAP1
-Sun May 04 20:40:32 2025
+Fri May 09 00:46:39 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -44,16 +44,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 04 20:40:32 2025       ;
+; Analysis & Synthesis Status        ; Successful - Fri May 09 00:46:39 2025       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; SAP1                                        ;
-; Top-level Entity Name              ; MAR                                         ;
+; Top-level Entity Name              ; unidadeDeControle                           ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 8                                           ;
-;     Total combinational functions  ; 4                                           ;
-;     Dedicated logic registers      ; 4                                           ;
-; Total registers                    ; 4                                           ;
-; Total pins                         ; 15                                          ;
+; Total logic elements               ; 25                                          ;
+;     Total combinational functions  ; 25                                          ;
+;     Dedicated logic registers      ; 3                                           ;
+; Total registers                    ; 3                                           ;
+; Total pins                         ; 24                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -69,7 +69,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C7G     ;                    ;
-; Top-level entity name                                            ; MAR                ; SAP1               ;
+; Top-level entity name                                            ; unidadeDeControle  ; SAP1               ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -158,63 +158,62 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                      ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                        ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
-; Ci74173.v                        ; yes             ; User Verilog HDL File  ; D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/Ci74173.v ;         ;
-; MAR.v                            ; yes             ; User Verilog HDL File  ; D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/MAR.v     ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                  ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
+; unidadeDeControle.v              ; yes             ; User Verilog HDL File  ; D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/unidadeDeControle.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 8            ;
-;                                             ;              ;
-; Total combinational functions               ; 4            ;
-; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 0            ;
-;     -- 3 input functions                    ; 4            ;
-;     -- <=2 input functions                  ; 0            ;
-;                                             ;              ;
-; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 4            ;
-;     -- arithmetic mode                      ; 0            ;
-;                                             ;              ;
-; Total registers                             ; 4            ;
-;     -- Dedicated logic registers            ; 4            ;
-;     -- I/O registers                        ; 0            ;
-;                                             ;              ;
-; I/O pins                                    ; 15           ;
-;                                             ;              ;
-; Embedded Multiplier 9-bit elements          ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; SELECT~input ;
-; Maximum fan-out                             ; 4            ;
-; Total fan-out                               ; 43           ;
-; Average fan-out                             ; 1.13         ;
-+---------------------------------------------+--------------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 25         ;
+;                                             ;            ;
+; Total combinational functions               ; 25         ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 11         ;
+;     -- 3 input functions                    ; 11         ;
+;     -- <=2 input functions                  ; 3          ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 25         ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 3          ;
+;     -- Dedicated logic registers            ; 3          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 24         ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; t_state[0] ;
+; Maximum fan-out                             ; 14         ;
+; Total fan-out                               ; 131        ;
+; Average fan-out                             ; 1.72       ;
++---------------------------------------------+------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                     ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name      ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------+-------------+--------------+
-; |MAR                       ; 4 (4)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 15   ; 0            ; 0          ; |MAR                     ; MAR         ; work         ;
-;    |Ci74173:registrador|   ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAR|Ci74173:registrador ; Ci74173     ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------+-------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name       ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------------+--------------+
+; |unidadeDeControle         ; 25 (25)             ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 24   ; 0            ; 0          ; |unidadeDeControle  ; unidadeDeControle ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -223,12 +222,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 4     ;
+; Total registers                              ; 3     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 3     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -238,15 +237,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 15                          ;
-; cycloneiii_ff         ; 4                           ;
-;     ENA               ; 4                           ;
-; cycloneiii_lcell_comb ; 4                           ;
-;     normal            ; 4                           ;
-;         3 data inputs ; 4                           ;
+; boundary_port         ; 24                          ;
+; cycloneiii_ff         ; 3                           ;
+;     CLR               ; 3                           ;
+; cycloneiii_lcell_comb ; 27                          ;
+;     normal            ; 27                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 11                          ;
+;         4 data inputs ; 11                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.68                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.36                        ;
 +-----------------------+-----------------------------+
 
 
@@ -265,10 +268,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun May 04 20:40:11 2025
+    Info: Processing started: Fri May 09 00:46:10 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SAP1 -c SAP1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file ula.v
+    Info (12023): Found entity 1: ula File: D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/ula.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file simula.v
+    Info (12023): Found entity 1: SimULA File: D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimUla.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file simcontadordeprograma.v
+    Info (12023): Found entity 1: SimContadorDePrograma File: D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimContadorDePrograma.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file contadordeprograma.v
+    Info (12023): Found entity 1: contadorDePrograma File: D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/contadorDePrograma.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file simmar.v
     Info (12023): Found entity 1: SimMAR File: D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimMAR.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file simram.v
@@ -302,21 +313,31 @@ Info (12021): Found 1 design units, including 1 entities, in source file simregi
     Info (12023): Found entity 1: SimRegistradorDeInstrucoes File: D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimRegistradorDeInstrucoes.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file mar.v
     Info (12023): Found entity 1: MAR File: D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/MAR.v Line: 1
-Info (12127): Elaborating entity "MAR" for the top level hierarchy
-Info (12128): Elaborating entity "Ci74173" for hierarchy "Ci74173:registrador" File: D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/MAR.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file unidadedecontrole.v
+    Info (12023): Found entity 1: unidadeDeControle File: D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/unidadeDeControle.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file simunidadedecontrole.v
+    Info (12023): Found entity 1: SimUnidadeDeControle File: D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimUnidadeDeControle.v Line: 2
+Info (12127): Elaborating entity "unidadeDeControle" for the top level hierarchy
+Warning (10270): Verilog HDL Case Statement warning at unidadeDeControle.v(78): incomplete case statement has no default case item File: D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/unidadeDeControle.v Line: 78
+Warning (10270): Verilog HDL Case Statement warning at unidadeDeControle.v(96): incomplete case statement has no default case item File: D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/unidadeDeControle.v Line: 96
+Warning (10270): Verilog HDL Case Statement warning at unidadeDeControle.v(114): incomplete case statement has no default case item File: D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/unidadeDeControle.v Line: 114
+Warning (10270): Verilog HDL Case Statement warning at unidadeDeControle.v(58): incomplete case statement has no default case item File: D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/unidadeDeControle.v Line: 58
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "Ea" is stuck at GND File: D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/unidadeDeControle.v Line: 22
+    Warning (13410): Pin "L0" is stuck at GND File: D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/unidadeDeControle.v Line: 39
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/output_files/SAP1.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 23 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 8 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4750 megabytes
-    Info: Processing ended: Sun May 04 20:40:32 2025
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:38
+Info (21057): Implemented 49 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 18 output pins
+    Info (21061): Implemented 25 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4762 megabytes
+    Info: Processing ended: Fri May 09 00:46:39 2025
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:47
 
 
 +------------------------------------------+

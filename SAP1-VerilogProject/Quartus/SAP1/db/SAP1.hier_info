@@ -1,40 +1,31 @@
-|MAR
-CLK => CLK.IN1
-Lm => Lm.IN1
-SELECT => Out.OUTPUTSELECT
-SELECT => Out.OUTPUTSELECT
-SELECT => Out.OUTPUTSELECT
-SELECT => Out.OUTPUTSELECT
-A[0] => Out.DATAB
-A[1] => Out.DATAB
-A[2] => Out.DATAB
-A[3] => Out.DATAB
-D[0] => D[0].IN1
-D[1] => D[1].IN1
-D[2] => D[2].IN1
-D[3] => D[3].IN1
-Out[0] <= Out.DB_MAX_OUTPUT_PORT_TYPE
-Out[1] <= Out.DB_MAX_OUTPUT_PORT_TYPE
-Out[2] <= Out.DB_MAX_OUTPUT_PORT_TYPE
-Out[3] <= Out.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|MAR|Ci74173:registrador
-clk => q[0]~reg0.CLK
-clk => q[1]~reg0.CLK
-clk => q[2]~reg0.CLK
-clk => q[3]~reg0.CLK
-load => q[0]~reg0.ENA
-load => q[1]~reg0.ENA
-load => q[2]~reg0.ENA
-load => q[3]~reg0.ENA
-o[0] => q[0]~reg0.DATAIN
-o[1] => q[1]~reg0.DATAIN
-o[2] => q[2]~reg0.DATAIN
-o[3] => q[3]~reg0.DATAIN
-q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|unidadeDeControle
+CLK => t_state[0].CLK
+CLK => t_state[1].CLK
+CLK => t_state[2].CLK
+CLR => t_state[0].ACLR
+CLR => t_state[1].ACLR
+CLR => t_state[2].ACLR
+opcode[0] => Decoder0.IN3
+opcode[1] => Decoder0.IN2
+opcode[2] => Decoder0.IN1
+opcode[3] => Decoder0.IN0
+Cp <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+Ep <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+Ej <= Ej.DB_MAX_OUTPUT_PORT_TYPE
+Eu <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Add <= Add.DB_MAX_OUTPUT_PORT_TYPE
+Sub <= Sub.DB_MAX_OUTPUT_PORT_TYPE
+AndOp <= AndOp.DB_MAX_OUTPUT_PORT_TYPE
+OrOp <= OrOp.DB_MAX_OUTPUT_PORT_TYPE
+XorOp <= XorOp.DB_MAX_OUTPUT_PORT_TYPE
+NotOp <= NotOp.DB_MAX_OUTPUT_PORT_TYPE
+La <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Ea <= <GND>
+Lb <= Lb.DB_MAX_OUTPUT_PORT_TYPE
+Lm <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+CE <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+L1 <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+Ei <= Ei.DB_MAX_OUTPUT_PORT_TYPE
+L0 <= <GND>
 
 

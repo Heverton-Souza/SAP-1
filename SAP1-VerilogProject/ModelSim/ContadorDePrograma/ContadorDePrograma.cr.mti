@@ -1,0 +1,15 @@
+D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/contadorDePrograma.v {1 {vlog -work work -stats=none D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/contadorDePrograma.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module contadorDePrograma
+
+Top level modules:
+	contadorDePrograma
+
+} {} {}} D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimContadorDePrograma.v {1 {vlog -work work -stats=none D:/SAP-1/SAP1-VerilogProject/Quartus/SAP1/SimContadorDePrograma.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module SimContadorDePrograma
+
+Top level modules:
+	SimContadorDePrograma
+
+} {} {}}

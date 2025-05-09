@@ -1,0 +1,56 @@
+`timescale 1ns/1ps
+
+module SimSAP1;
+
+    // Entradas
+    reg clk_in;
+    reg limpar_iniciar;
+    reg run_prog;
+    reg leitura_escrita;
+
+    // Saída
+    wire [7:0] saida_final;
+
+    // Instancia o módulo top do computador
+    SAP1 DUT (
+        .clk_in(clk_in),
+        .limpar_iniciar(limpar_iniciar),
+        .run_prog(run_prog),
+        .leitura_escrita(leitura_escrita),
+        .saida_final(saida_final)
+    );
+
+    // Geração do clock
+    initial begin
+        clk_in = 0;
+        forever #10 clk_in = ~clk_in; // 20ns de período
+    end
+
+    // Simulação de sequência de controle
+    initial begin
+        // Início: reset ativo
+        limpar_iniciar = 1;
+        run_prog = 0;            // Modo programação
+        leitura_escrita = 0;     // Escrevendo na RAM
+        #30;
+
+        // Desativa reset
+        limpar_iniciar = 0;
+        #100;
+
+        // Simular programação (escrevendo dados fictícios)
+        // Aqui você poderia adicionar mais controle se tivesse interface de dados externos
+
+        // Aguarda algum tempo simulando escrita na RAM
+        #200;
+
+        // Muda para modo execução
+        run_prog = 1;
+        leitura_escrita = 1;     // Lendo da RAM
+        #500;
+
+        // Finaliza simulação
+        $stop;
+    end
+
+endmodule

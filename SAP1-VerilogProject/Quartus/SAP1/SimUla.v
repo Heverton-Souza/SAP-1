@@ -1,75 +1,66 @@
 `timescale 1ns/1ps
-
-module SimUla;
+module SimULA;
 
     // Entradas
     reg [7:0] A;
     reg [7:0] B;
-    reg [2:0] op;
-    reg En;
+    reg Eu;
+    reg Add, Sub, AndOp, OrOp, XorOp, NotOp;
 
     // Saída
     wire [7:0] Out;
 
-    // Instancia o módulo da ULA
+    // Instancia a ULA
     ula DUT (
         .A(A),
         .B(B),
-        .op(op),
-        .En(En),
+        .Eu(Eu),
+        .Add(Add),
+        .Sub(Sub),
+        .AndOp(AndOp),
+        .OrOp(OrOp),
+        .XorOp(XorOp),
+        .NotOp(NotOp),
         .Out(Out)
     );
 
+    // Procedimento de teste
     initial begin
-        // Inicialização
-        A = 8'b00000000;
-        B = 8'b00000000;
-        op = 3'b000;
-        En = 0;
+        // Inicializa sinais
+        A = 8'b00001111;
+        B = 8'b11110000;
+        Eu = 0;
+        Add = 0; Sub = 0; AndOp = 0; OrOp = 0; XorOp = 0; NotOp = 0;
 
-        // Aguarda alguns ns antes de iniciar
-        #10;
+        #20 Eu = 1;
 
-        // Operação: Soma
-        A = 8'd10;
-        B = 8'd5;
-        op = 3'b000;
-        En = 1;
-        #20;
+        // Testa soma
+        #20 Add = 1;
+        #20 Add = 0;
 
-        // Operação: Subtração
-        op = 3'b001;
-        #20;
+        // Testa subtração
+        #20 Sub = 1;
+        #20 Sub = 0;
 
-        // Operação: AND
-        op = 3'b010;
-        #20;
+        // Testa AND
+        #20 AndOp = 1;
+        #20 AndOp = 0;
 
-        // Operação: OR
-        op = 3'b011;
-        #20;
+        // Testa OR
+        #20 OrOp = 1;
+        #20 OrOp = 0;
 
-        // Operação: XOR
-        op = 3'b100;
-        #20;
+        // Testa XOR
+        #20 XorOp = 1;
+        #20 XorOp = 0;
 
-        // Operação: NOT (somente sobre A)
-        op = 3'b101;
-        #20;
+        // Testa NOT (sobre A)
+        #20 NotOp = 1;
+        #20 NotOp = 0;
 
-        // Testa disable (En = 0)
-        En = 0;
-        #20;
+        // Desativa a ULA
+        #20 Eu = 0;
 
-        // Teste extra com valores diferentes
-        A = 8'b11110000;
-        B = 8'b00001111;
-        op = 3'b010; // AND
-        En = 1;
-        #20;
-
-        // Finaliza simulação
-        $stop;
     end
 
 endmodule

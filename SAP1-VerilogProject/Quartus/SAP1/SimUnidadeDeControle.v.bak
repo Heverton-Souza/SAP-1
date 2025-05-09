@@ -1,0 +1,82 @@
+`timescale 1ns/1ps
+module SimUnidadeDeControle;
+
+    // Entradas
+    reg CLK;
+    reg CLR;
+    reg [3:0] opcode;
+
+    // Saídas
+    wire Cp, Ep, Ej;
+    wire Eu, Add, Sub, AndOp, OrOp, XorOp, NotOp;
+    wire La, Ea, Lb;
+    wire Lm, CE, L1, Ei;
+    wire L0;
+
+    // Instancia a unidade de controle
+    unidadeDeControle DUT (
+        .CLK(CLK),
+        .CLR(CLR),
+        .opcode(opcode),
+        .Cp(Cp),
+        .Ep(Ep),
+        .Ej(Ej),
+        .Eu(Eu),
+        .Add(Add),
+        .Sub(Sub),
+        .AndOp(AndOp),
+        .OrOp(OrOp),
+        .XorOp(XorOp),
+        .NotOp(NotOp),
+        .La(La),
+        .Ea(Ea),
+        .Lb(Lb),
+        .Lm(Lm),
+        .CE(CE),
+        .L1(L1),
+        .Ei(Ei),
+        .L0(L0)
+    );
+
+    // Geração do clock (20ns de período)
+    initial begin
+        CLK = 0;
+        forever #10 CLK = ~CLK;
+    end
+
+    // Sequência de teste
+    initial begin
+        // Inicialização
+        CLR = 1;
+        opcode = 4'b0000; // opcode neutro
+        #20 CLR = 0;
+
+        // Testa ADD (opcode 0100)
+        opcode = 4'b0100;
+        #120;
+
+        // Testa SUB (opcode 0101)
+        opcode = 4'b0101;
+        #120;
+
+        // Testa AND (opcode 0110)
+        opcode = 4'b0110;
+        #120;
+
+        // Testa OR (opcode 0111)
+        opcode = 4'b0111;
+        #120;
+
+        // Testa XOR (opcode 1000)
+        opcode = 4'b1000;
+        #120;
+
+        // Testa NOT (opcode 1001)
+        opcode = 4'b1001;
+        #120;
+
+        // Finaliza simulação
+        $finish;
+    end
+
+endmodule
