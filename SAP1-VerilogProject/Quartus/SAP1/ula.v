@@ -16,7 +16,7 @@ module ula (
             if (Add)
                 Out = A + B;
             else if (Sub)
-                Out = A + (~B + 1);
+                Out = A - B;
             else if (AndOp)
                 Out = A & B;
             else if (OrOp)
@@ -28,7 +28,7 @@ module ula (
             else
                 Out = 8'b00000000; // Nenhuma operação válida
         end else begin
-            Out = 8'b00000000; // ULA desabilitada
+				Out = 8'bzzzzzzzz; // ULA desabilitada
         end
     end
 endmodule

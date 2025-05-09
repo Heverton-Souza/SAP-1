@@ -1,10 +1,10 @@
 module MAR (
-    input CLK,
-    input Lm,
+    input CLK,			// Clock
+    input Lm,        // Load MAR - Vindo da unidade de Controle
     input SELECT,    // 0 = modo programação, 1 = execução normal
     input [3:0] A,   // entrada do mux (modo programação)
     input [3:0] D,   // entrada do registrador (vindo do barramento central)
-    output [3:0] Out // saída para o sistema (endereço efetivo)
+    output [3:0] Out // saída para a RAM (endereço efetivo)
 );
 
     wire [3:0] Q;

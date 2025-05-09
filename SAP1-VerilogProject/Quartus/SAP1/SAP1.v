@@ -8,103 +8,103 @@ module SAP1(
 );
 
     // Clock e reset
-    wire CLK_sig = clk_in;
-    wire CLR_sig = limpar_iniciar;
+    wire CLK = clk_in;
+    wire CLR = limpar_iniciar;
 
     // Barramento de controle e dados
-    wire Cp_sig, Ep_sig, Ej_sig;
-    wire Eu_sig, Add_sig, Sub_sig, AndOp_sig, OrOp_sig, XorOp_sig, NotOp_sig;
-    wire La_sig, Ea_sig, Lb_sig;
-    wire Lm_sig, CE_sig, L1_sig, Ei_sig, L0_sig;
+    wire Cp, Ep, Ej;
+    wire Eu, Add, Sub, AndOp, OrOp, XorOp, NotOp;
+    wire La, Ea, Lb;
+    wire Lm, CE, L1, Ei, L0;
 
-    wire [7:0] para_barramento_sig;
-    wire [7:0] para_ula_sig;
-    wire [7:0] entrada_sig;
-    wire [7:0] data_out_sig;
-    wire [7:0] saida_instrucao_sig;
-    wire [7:0] saida_sig;
-    wire [3:0] Out_sig;
-    wire [3:0] Addr_sig;
-    wire [3:0] opcode_sig;
+    wire [7:0] para_barramento;
+    wire [7:0] para_ula;
+    wire [7:0] entrada;
+    wire [7:0] data_out;
+    wire [7:0] saida_instrucao;
+    wire [7:0] saida;
+    wire [3:0] Out;
+    wire [3:0] Addr;
+    wire [3:0] opcode;
 
-    wire [7:0] A_sig;
-    wire [7:0] B_sig;
+    wire [7:0] A;
+    wire [7:0] B;
 
     // Sinais derivados
-    assign entrada_sig = data_out_sig;
-    assign opcode_sig = saida_instrucao_sig[7:4];
-    assign Addr_sig = saida_instrucao_sig[3:0];
+    assign entrada = data_out;
+    assign opcode = saida_instrucao[7:4];
+    assign Addr = saida_instrucao[3:0];
 
     // ======== INSTANCIAMENTO DOS MÓDULOS =========
 
     // Unidade de Controle
     unidadeDeControle unidadeDeControle_inst (
-        .CLK(CLK_sig), .CLR(CLR_sig), .opcode(opcode_sig),
-        .Cp(Cp_sig), .Ep(Ep_sig), .Ej(Ej_sig),
-        .Eu(Eu_sig), .Add(Add_sig), .Sub(Sub_sig),
-        .AndOp(AndOp_sig), .OrOp(OrOp_sig), .XorOp(XorOp_sig), .NotOp(NotOp_sig),
-        .La(La_sig), .Ea(Ea_sig), .Lb(Lb_sig),
-        .Lm(Lm_sig), .CE(CE_sig), .L1(L1_sig), .Ei(Ei_sig), .L0(L0_sig)
+        .CLK(CLK), .CLR(CLR), .opcode(opcode),
+        .Cp(Cp), .Ep(Ep), .Ej(Ej),
+        .Eu(Eu), .Add(Add), .Sub(Sub),
+        .AndOp(AndOp), .OrOp(OrOp), .XorOp(XorOp), .NotOp(NotOp),
+        .La(La), .Ea(Ea), .Lb(Lb),
+        .Lm(Lm), .CE(CE), .L1(L1), .Ei(Ei), .L0(L0)
     );
 
     // Contador de Programa
     contadorDePrograma contadorDePrograma_inst (
-        .Cp(Cp_sig), .CLK(CLK_sig), .CLR(CLR_sig),
-        .Ep(Ep_sig), .Ej(Ej_sig), .Addr(Addr_sig), .Out(Out_sig)
+        .Cp(Cp), .CLK(CLK), .CLR(CLR),
+        .Ep(Ep), .Ej(Ej), .Addr(Addr), .Out(Out)
     );
 
     // MAR
     MAR MAR_inst (
-        .CLK(CLK_sig), .Lm(Lm_sig),
+        .CLK(CLK), .Lm(Lm),
         .SELECT(run_prog), // SELECT: 0 = execução | 1 = programação
-        .A(Out_sig), .D(Addr_sig), .Out(Addr_sig)
+        .A(Out), .D(Addr), .Out(Addr)
     );
 
     // RAM
     RAM RAM_inst (
-        .addr(Addr_sig),
-        .data_in(para_barramento_sig),
+        .addr(Addr),
+        .data_in(para_barramento),
         .run_prog(run_prog),
-        .ce(CE_sig),
+        .ce(CE),
         .leitura_escrita(leitura_escrita),
-        .data_out(data_out_sig)
+        .data_out(data_out)
     );
 
     // Registrador de Instruções
     registradorDeInstrucoes registradorDeInstrucoes_inst (
-        .clk(CLK_sig), .load(L1_sig),
-        .clr_msb(CLR_sig), .ei_lsb(Ei_sig),
-        .entrada_instrucao(data_out_sig),
-        .saida_instrucao(saida_instrucao_sig)
+        .clk(CLK), .load(L1),
+        .clr_msb(CLR), .ei_lsb(Ei),
+        .entrada_instrucao(data_out),
+        .saida_instrucao(saida_instrucao)
     );
 
     // Acumulador
     acumulador acumulador_inst (
-        .CLK(CLK_sig), .La(La_sig), .Ea(Ea_sig),
-        .entrada(entrada_sig),
-        .para_ula(A_sig), .para_barramento(para_barramento_sig)
+        .CLK(CLK), .La(La), .Ea(Ea),
+        .entrada(entrada),
+        .para_ula(A), .para_barramento(para_barramento)
     );
 
     // Registrador B
     registradorB registradorB_inst (
-        .CLK(CLK_sig), .Lb(Lb_sig),
-        .entrada(entrada_sig),
-        .para_ula(B_sig)
+        .CLK(CLK), .Lb(Lb),
+        .entrada(entrada),
+        .para_ula(B)
     );
 
     // ULA
     ula ula_inst (
-        .A(A_sig), .B(B_sig),
-        .Eu(Eu_sig), .Add(Add_sig), .Sub(Sub_sig),
-        .AndOp(AndOp_sig), .OrOp(OrOp_sig),
-        .XorOp(XorOp_sig), .NotOp(NotOp_sig),
-        .Out(entrada_sig)
+        .A(A), .B(B),=
+        .Eu(Eu), .Add(Add), .Sub(Sub),
+        .AndOp(AndOp), .OrOp(OrOp),
+        .XorOp(XorOp), .NotOp(NotOp),
+        .Out(entrada)
     );
 
     // Registrador de Saída
     registradorSaida registradorSaida_inst (
-        .CLK(CLK_sig), .Lo(L0_sig),
-        .entrada(entrada_sig),
+        .CLK(CLK), .Lo(L0),
+        .entrada(entrada),
         .saida(saida_final)
     );
 

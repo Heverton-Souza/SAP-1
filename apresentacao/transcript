@@ -1,0 +1,21 @@
+# Compile of SimUla.v was successful.
+# Compile of ula.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.SimULA
+# vsim -gui work.SimULA 
+# Start time: 08:55:08 on May 09,2025
+# Loading work.SimULA
+# Loading work.ula
+add wave -position end  sim:/SimULA/A
+add wave -position end  sim:/SimULA/B
+add wave -position end  sim:/SimULA/Eu
+add wave -position end  sim:/SimULA/Add
+add wave -position end  sim:/SimULA/Sub
+add wave -position end  sim:/SimULA/AndOp
+add wave -position end  sim:/SimULA/OrOp
+add wave -position end  sim:/SimULA/XorOp
+add wave -position end  sim:/SimULA/NotOp
+add wave -position end  sim:/SimULA/Out
+run
+# End time: 09:27:32 on May 09,2025, Elapsed time: 0:32:24
+# Errors: 0, Warnings: 5
